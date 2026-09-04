@@ -100,6 +100,69 @@ def log(msg):
     print("[{}] {}".format(iso(), msg), flush=True)
 
 
+try:
+    from zoneinfo import ZoneInfo
+    LOCAL_TZ = ZoneInfo(os.environ.get("TE_TIMEZONE", "America/New_York"))
+except Exception:                                     # pragma: no cover
+    LOCAL_TZ = datetime.timezone(datetime.timedelta(hours=-4))
+
+
+def to_datetime(value):
+    """Coerce every date shape this API uses into an aware UTC datetime.
+
+    The feed returns MongoDB extended JSON - {"$date": {"$numberLong": "1788457303188"}} -
+    for both created_at and showtime dates, so a naive str() of it is identical for
+    every record and silently collapses all of a show's dates into one.
+    """
+    if value is None or value == "":
+        return None
+    if isinstance(value, dict):
+        inner = value.get("$date", value)
+        if isinstance(inner, dict):
+            for key in ("$numberLong", "$numberInt", "$numberDouble", "$date"):
+                if key in inner:
+                    return to_datetime(inner[key])
+            return None
+        return to_datetime(inner)
+    if isinstance(value, bool):
+        return None
+    if isinstance(value, (int, float)):
+        seconds = float(value)
+        if abs(seconds) > 1e11:                       # milliseconds, not seconds
+            seconds /= 1000.0
+        try:
+            return datetime.datetime.fromtimestamp(seconds, tz=datetime.timezone.utc)
+        except (OverflowError, OSError, ValueError):
+            return None
+    text = str(value).strip()
+    if not text:
+        return None
+    if re.fullmatch(r"-?\d{9,14}", text):
+        return to_datetime(int(text))
+    cleaned = text.replace("Z", "+00:00")
+    for parse in (datetime.datetime.fromisoformat,
+                  lambda t: datetime.datetime.strptime(t, "%Y-%m-%d %H:%M:%S"),
+                  lambda t: datetime.datetime.strptime(t, "%Y-%m-%d %H:%M"),
+                  lambda t: datetime.datetime.strptime(t, "%Y-%m-%d")):
+        try:
+            parsed = parse(cleaned)
+            return parsed if parsed.tzinfo else parsed.replace(
+                tzinfo=datetime.timezone.utc)
+        except (ValueError, TypeError):
+            continue
+    return None
+
+
+def date_key(value):
+    """A stable, human-sortable local-time key for one showtime."""
+    parsed = to_datetime(value)
+    if parsed is not None:
+        return parsed.astimezone(LOCAL_TZ).strftime("%Y-%m-%d %H:%M")
+    if isinstance(value, (dict, list)):
+        return json.dumps(value, sort_keys=True, default=str)[:64]
+    return str(value).strip()[:16]
+
+
 # --------------------------------------------------------------------------- state
 
 
@@ -223,7 +286,7 @@ def filter_region(events):
 
 
 def showtime_key(showtime):
-    return str(showtime.get("date", "") or "").strip()[:16]
+    return date_key(showtime.get("date"))
 
 
 def available_count(showtime):
@@ -234,6 +297,12 @@ def available_count(showtime):
         return int(raw)
     except (TypeError, ValueError):
         return None
+
+
+def legacy_date_keys(stored):
+    """True if this record was written by the version that keyed showtimes off
+    str({'$date': ...})[:16] - one collapsed key standing in for every date."""
+    return any(str(key).startswith("{") for key in stored)
 
 
 def showtimes_now(event):
@@ -260,12 +329,20 @@ def pretty_date(key):
     for fmt in ("%Y-%m-%d %H:%M", "%Y-%m-%dT%H:%M"):
         try:
             return datetime.datetime.strptime(key, fmt).strftime("%a %b %-d, %-I:%M %p")
-        except ValueError:
+        except (ValueError, TypeError):
             continue
     try:
-        return datetime.datetime.strptime(key[:10], "%Y-%m-%d").strftime("%a %b %-d")
-    except ValueError:
-        return key
+        return datetime.datetime.strptime(str(key)[:10], "%Y-%m-%d").strftime("%a %b %-d")
+    except (ValueError, TypeError):
+        return str(key)
+
+
+def pretty_moment(value):
+    """Readable local time for an arbitrary API date value."""
+    parsed = to_datetime(value)
+    if parsed is None:
+        return str(value)[:32]
+    return parsed.astimezone(LOCAL_TZ).strftime("%b %-d, %-I:%M %p")
 
 
 # --------------------------------------------------------------------- notification
@@ -352,9 +429,9 @@ def change_lines(change):
         dates = sorted(change["dates"])
         if dates:
             lines.append("Next: " + pretty_date(dates[0]))
-        added = str(change["event"].get("created_at", "") or "")[:16]
+        added = to_datetime(change["event"].get("created_at"))
         if added:
-            lines.append("Listed: " + pretty_date(added))
+            lines.append("Listed: " + pretty_moment(change["event"].get("created_at")))
     else:
         if change["drops"]:
             for key, count in sorted(change["drops"])[:4]:
@@ -433,9 +510,12 @@ def check(state):
         regions[label] = regions.get(label, 0) + 1
     log("region labels: " + ", ".join(
         "{} x{}".format(k, v) for k, v in sorted(regions.items())[:20]))
-    newest = sorted(raw, key=lambda e: str(e.get("created_at", "")), reverse=True)[:5]
+    def created_sort_key(event):
+        parsed = to_datetime(event.get("created_at"))
+        return parsed.timestamp() if parsed else float("-inf")
+    newest = sorted(raw, key=created_sort_key, reverse=True)[:8]
     log("newest by created_at: " + " | ".join(
-        "{} ({})".format(str(e.get("name", ""))[:38], e.get("created_at"))
+        "{} ({})".format(str(e.get("name", ""))[:38], pretty_moment(e.get("created_at")))
         for e in newest))
 
     if not events:
@@ -446,6 +526,7 @@ def check(state):
     stamp = iso()
     cooldown = datetime.timedelta(hours=AVAIL_COOLDOWN_HOURS)
     changes = []
+    migrated = 0
 
     # Diagnostic: if the feed never carries ticket counts, "tickets released"
     # alerts can never fire and the counts below will show it plainly.
@@ -456,8 +537,9 @@ def check(state):
                 unknown_counts += 1
             else:
                 known_counts += 1
-    log("showtimes: {} with a ticket count, {} without".format(
-        known_counts, unknown_counts))
+    log("showtimes: {} distinct across {} productions - {} with a ticket count, "
+        "{} without".format(known_counts + unknown_counts, len(events),
+                            known_counts, unknown_counts))
 
     for event in events:
         key = str(event.get("id") or event.get("name") or "")
@@ -477,10 +559,11 @@ def check(state):
         record = seen[key]
         record["last_seen"] = stamp
         known = record.get("dates")
-        first_time_tracking = not isinstance(known, dict)
-        if first_time_tracking:
-            # Migrating a production recorded before showtime tracking existed:
-            # adopt its current showtimes silently instead of alerting on all of them.
+        if not isinstance(known, dict) or legacy_date_keys(known):
+            # Either this production predates showtime tracking, or its stored
+            # dates use the old collapsed key. Adopt the real showtimes silently
+            # rather than announcing every date of every show as new.
+            migrated += 1
             record_dates(record, current, stamp)
             continue
 
@@ -506,6 +589,10 @@ def check(state):
         if new_dates or drops:
             changes.append({"kind": "update", "event": event, "dates": list(current),
                             "new_dates": new_dates, "drops": drops})
+
+    if migrated:
+        log("re-baselined {} productions whose stored dates used the old format "
+            "- no alerts sent for those".format(migrated))
 
     if changes:
         for change in changes:
