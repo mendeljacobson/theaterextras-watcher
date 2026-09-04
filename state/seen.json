@@ -3,58 +3,124 @@
  "last_heartbeat": "2026-09-02T16:58:25+00:00",
  "seen": {
   "019e2234-d39d-7d86-99de-4c6494892ea1": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 20,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "All Star Comedy Special"
   },
   "019f0a01-dc9d-70a3-8bb9-5fbb59e4a346": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 0,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "New York Jets vs Cleveland Browns"
   },
   "019f0a09-ed99-7fe0-9e10-e5c85fafbbee": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 0,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "New York Jets vs Miami Dolphins"
   },
   "019fae3e-080e-77f5-b3eb-b1242f22088b": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 21,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "The Pass"
   },
   "019fb41f-3bef-757c-8c4b-5b5123dded17": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 0,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "New York Yankees vs Tampa Bay Rays - BOX SEATS"
   },
   "019fb8bf-fbfd-7ff2-80f5-fd967464bd03": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 28,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "The Real Ivanov"
   },
   "019ff10e-8489-78f4-8d0b-df155c59bf59": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 0,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "DCINY: Spirit of Freedom at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "019ff13c-48ce-7512-a45b-574e4eb29ce0": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 0,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "DCINY: Total Vocal with Deke Sharon, A Holiday Celebration at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "019ff6e0-b422-7be4-b1ee-ef18c2d59562": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 0,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "New York Yankees vs Baltimore Orioles - Josh Hart Bobblehead Night - BOX SEATS"
   },
   "01a0157c-c53f-7993-b544-da544cafa168": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 30,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "David Duchovny: About Time Live in Conversation in New York with Gina Gershon"
   },
   "01a0162f-7358-7296-b8ad-d812a031e9ea": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 8,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Fall From Grace"
   },
   "01a01f24-d581-7dec-827e-d7dd19e1a576": {
@@ -63,8 +129,14 @@
    "name": "To Have and to Hold"
   },
   "01a039a4-6338-7b07-b41e-3a20337142f9": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 20,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Tanya Moberly Repetoire"
   },
   "01a043d8-10b1-7a1a-9bd7-50190deb9671": {
@@ -88,103 +160,223 @@
    "name": "Britani Bateman: What About Me?"
   },
   "01a04505-12da-72e1-bcea-905c36cfa2b6": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 2,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "9/11 Through the Media Lens: 25 Years Later"
   },
   "01a04507-e343-70cb-a7f5-34b97f354a9d": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 15,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Films at the Museum: “Boy on the Run” Screening and Talkback"
   },
   "01a048c9-085e-7076-bec6-79197f46f7c8": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 10,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Brooklyn Cyclones Baseball"
   },
   "01a05439-9519-7208-9a3c-d5763f29e3d5": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 10,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Greg Osby: Dancing with Duke - Music of Duke Ellington feat Ethan Iverson, Eric Harland, JD Allen, Virginia Macdonald, Lonnie Plaxico"
   },
   "01a0543f-833a-7eec-8d65-5265ec5c01aa": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 13,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "After All These Years"
   },
   "01a05886-0ccb-7419-8a34-601c9c8e5c6b": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 20,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Ruperto Vanderpool (Netflix) Jim Mendrinos (Comedy Central), Craig Gass (Howard Stern), Mike Yard (The Nightly Show), & JJ Ramirez (Latin Legend of Comedy)!"
   },
   "01a05889-cf4c-7f7f-8cff-3eef4bdeeb53": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 16,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Tom Van Horn (Comedy Central), Thash Mose (Netflix is a Joke), Nore Davis (Inside Amy Schumer), Craig Gass (Howard Stern), JJ Ramirez (Latin Legend of Comedy)!  "
   },
   "01a0588f-3bc0-7c51-9f30-5ef570baeaf1": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 4,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "NEW YORK METS vs PHILADELPHIA PHILLIES - Box Seats"
   },
   "01a05893-1db0-770f-95d4-e54b824c1234": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 14,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "NY Mets vs Philadelphia Phillies - LINDOR BOBBLEHEAD NIGHT"
   },
   "01a058b3-dc4d-773b-94d4-74cc02b11a82": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 6,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Garbielle Stravelli Trio"
   },
   "01a058b5-9231-75a2-893e-f76ebbb20d4e": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 0,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Michael Davidman, piano"
   },
   "01a058b9-d949-712d-83e8-038aecbab194": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 20,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Fidelity Theatricals Presents"
   },
   "01a058e0-098b-72e1-88d5-67923b769f1d": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 0,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Monica Ramey"
   },
   "01a05d5c-7c53-7063-b2d4-b8ca66ff9e02": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 1,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Joe Alterman Trio"
   },
   "01a05d5e-1c6b-76ef-ac25-f399054b0c4e": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 4,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "The Rubout\" & \"Anne of A Thousand Faces"
   },
   "01a05d60-6f72-7bad-a039-3171a4be28ef": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 18,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Danielle Crittenden with Andrew Solomon: Dispatches from Grief"
   },
   "01a05d63-30c8-714e-8eef-eabba3b992d1": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 0,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Safe House"
   },
   "01a05d67-c168-74af-9820-cccd211013e6": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 0,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Vince Giordano and the Nighthawks"
   },
   "01a05d85-0ee2-73e2-a783-4ff8d58715fa": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 6,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "New York Yankees vs Baltimore Orioles - Josh Hart Bobblehead Night "
   },
   "01a05d8b-fd2b-7c22-9493-41acc3096d8a": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 20,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Alison Lurie at 100: with Bruce Handy, Joanna Rakoff, and Micah Perks, moderated by Cody Upton"
   },
   "01a0627f-ba44-76cc-9e90-8f52bfc860db": {
@@ -193,88 +385,190 @@
    "name": "Bach to Broadway: Violin and Cello Concert "
   },
   "01a0628d-5cd3-7f5a-b7a8-d59d0694b5b3": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 4,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "54 Sings Lin-Manuel Miranda: Volume 4"
   },
   "01a06298-2ec4-7eb4-875b-6ca692ee8311": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 20,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Tom Van Horn (Comedy Central), Elyse Delucci (New York Comedy Festival), Connor O’Brien (Don’t Tell Comedy), Nick Griffin (Letterman), & Gregg Rogell (The Tonight Show)!"
   },
   "01a0629b-19d2-7648-b9d6-51010a76081b": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 0,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Emmett Cohen Trio"
   },
   "01a0629c-c7a5-763d-a78d-7c3f55414fae": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 11,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Donny McCaslin, Ben Allison, Steve Smith: \"WAY OUT WEST\" A Birthday Tribute to Sonny Rollins"
   },
   "01a062a0-fbd7-7696-a65c-1af57b29003f": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 4,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Bryce Edwards’ Frivolity Hour"
   },
   "01a062a2-0f99-746e-8b97-b5602c0aaab0": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 20,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Tom Van Horn (Comedy Central), Elyse Delucci (New York Comedy Festival), Connor O’Brien (Don’t Tell Comedy), Mike Yard (The Nightly Show), & Joe Matarese (America’s Got Talent)!"
   },
   "01a062ab-eeda-7690-8dd7-fc6041aa6e76": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 8,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Eliane Elias"
   },
   "01a062ad-c280-76a0-af7c-010abb2692df": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 6,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Bill Mays Trio"
   },
   "01a062b2-10b2-7e6a-a779-e4a54db70f9a": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 10,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "New York Jets vs Denver Broncos"
   },
   "01a062b4-920c-75dd-8225-b22e58f2f0be": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 8,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "DCINY: Sounds of the Season at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "01a06833-9e2f-7ab9-8bd1-e9cff671d13c": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 10,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-03T18:05:28+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "COLTRANE REVISITED CENTENNIAL CELEBRATION with Jimmy Greene, Troy Roberts, Helen Sung, Steve Smith, Lonnie Plaxico"
   },
   "01a06837-7b83-79b5-bc53-0d2d7cde49d1": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 8,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-03T18:05:28+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Quinn Lemley's \"Swinging Hot Tomato\""
   },
   "01a0683c-6ae2-7148-b626-bbb838737791": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 20,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-03T18:05:28+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Becoming Hamlet"
   },
   "01a06843-46de-7976-bffd-087e10892f8d": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 10,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-03T18:05:28+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Ed Neumeister’s NeuNeuNonet"
   },
   "01a0685c-bc94-7423-8c8f-1a1802987440": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 9,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-03T18:05:28+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Matt Wilson's Good Trouble"
   },
   "49255": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 10,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Dueling Pianos NYC"
   },
   "50857": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 20,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Early Bird Comedy at St Marks Comedy Club"
   },
   "51194": {
@@ -288,30 +582,60 @@
    "name": "U.S. OPEN 2026"
   },
   "51401": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 0,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-03T14:44:49+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "AMAZE"
   },
   "51421": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 11,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Marnie Klar Sings Carly Simon"
   },
   "51891": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 20,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Birdland Latin Jazz Orchestra"
   },
   "52100": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 8,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "New York Yankees vs Colorado Rockies"
   },
   "52111": {
+   "dates": {
+    "{'$date': {'$num": {
+     "avail": 10,
+     "first_seen": "2026-09-04T04:49:26+00:00"
+    }
+   },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-04T00:32:25+00:00",
+   "last_seen": "2026-09-04T04:53:28+00:00",
    "name": "Petite Rouge"
   }
  },
- "updated_at": "2026-09-04T00:32:25+00:00"
+ "updated_at": "2026-09-04T04:53:28+00:00"
 }
