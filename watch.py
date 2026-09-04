@@ -1,21 +1,31 @@
 #!/usr/bin/env python3
 """
-TheaterExtras new-event watcher.
+TheaterExtras listing watcher.
 
-Polls the members-only listings API, compares the set of production IDs against
-a committed state file, and sends a push notification (via ntfy) for anything
-newly added.
+Polls the members-only listings API and pushes a notification (via ntfy) for
+three distinct kinds of change, because on a seatfiller site all three mean
+"something is bookable that wasn't a minute ago":
+
+  1. a production that has never appeared in the feed before
+  2. a new showtime on a production already in the feed
+  3. a showtime whose available_tickets went from 0 to one or more
 
 Configuration comes entirely from environment variables:
 
-  TE_ACCESS_TOKEN   required   your TheaterExtras access token (repo secret)
-  NTFY_TOPIC        required   ntfy topic name (repo secret) - keep it unguessable
-  NTFY_SERVER       optional   default https://ntfy.sh
-  TE_REGION         optional   default "New York"; use "all" to watch everything
-  REPEATS           optional   checks per run (default 3)
-  SLEEP_SECONDS     optional   seconds between checks in a run (default 120)
-  HEARTBEAT_HOURS   optional   alive-ping interval (default 168 = weekly)
-  STATE_PATH        optional   default state/seen.json
+  TE_ACCESS_TOKEN       required  your TheaterExtras access token (repo secret)
+  NTFY_TOPIC            required  ntfy topic name (repo secret) - keep it unguessable
+  NTFY_SERVER           optional  default https://ntfy.sh
+  TE_EXCLUDE_REGIONS    optional  comma-separated regions to ignore, default
+                                  "Los Angeles". Anything not matched is kept,
+                                  so an unfamiliar region label never goes
+                                  silently missing.
+  ALERT_NEW_SHOWTIMES   optional  default on
+  ALERT_TICKET_DROPS    optional  default on
+  AVAIL_COOLDOWN_HOURS  optional  re-alert window per showtime (default 12)
+  REPEATS               optional  checks per run (default 3)
+  SLEEP_SECONDS         optional  seconds between checks in a run (default 120)
+  HEARTBEAT_HOURS       optional  alive-ping interval (default 168 = weekly)
+  STATE_PATH            optional  default state/seen.json
 
 The token is never printed, logged, or written to the state file.
 """
@@ -34,18 +44,31 @@ API_URL = "https://api.theaterextras.com/account/get-events.php"
 SITE = "https://www.theaterextras.com"
 PRODUCTION_URL = SITE + "/events/production/?production_id={}"
 
+
+def env_flag(name, default=True):
+    raw = os.environ.get(name)
+    if raw is None or not raw.strip():
+        return default
+    return raw.strip().lower() not in ("0", "false", "no", "off")
+
+
 TOKEN = os.environ.get("TE_ACCESS_TOKEN", "").strip()
 NTFY_SERVER = os.environ.get("NTFY_SERVER", "https://ntfy.sh").strip().rstrip("/")
 NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "").strip().strip("/")
-REGION = os.environ.get("TE_REGION", "New York").strip()
+EXCLUDE_REGIONS = [r.strip().lower() for r in
+                   os.environ.get("TE_EXCLUDE_REGIONS", "Los Angeles").split(",")
+                   if r.strip()]
+ALERT_NEW_SHOWTIMES = env_flag("ALERT_NEW_SHOWTIMES", True)
+ALERT_TICKET_DROPS = env_flag("ALERT_TICKET_DROPS", True)
+AVAIL_COOLDOWN_HOURS = float(os.environ.get("AVAIL_COOLDOWN_HOURS", "12"))
 REPEATS = int(os.environ.get("REPEATS", "3"))
 SLEEP_SECONDS = int(os.environ.get("SLEEP_SECONDS", "120"))
 HEARTBEAT_HOURS = float(os.environ.get("HEARTBEAT_HOURS", "168"))
 STATE_PATH = pathlib.Path(os.environ.get("STATE_PATH", "state/seen.json"))
 
 ERROR_COOLDOWN_HOURS = 6.0   # don't spam the same failure
-PRUNE_DAYS = 120             # forget events unseen this long
-MAX_INDIVIDUAL = 3           # more new events than this -> one summary push
+PRUNE_DAYS = 120             # forget productions unseen this long
+MAX_INDIVIDUAL = int(os.environ.get("MAX_INDIVIDUAL", "20"))  # per-show pushes per run
 
 BROWSER_UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
@@ -53,8 +76,8 @@ BROWSER_UA = (
 )
 
 REGION_ALIASES = {
+    "los angeles": {"los angeles", "losangeles", "los-angeles", "la"},
     "new york": {"new york", "newyork", "new-york", "ny", "nyc"},
-    "los angeles": {"los angeles", "losangeles", "los-angeles", "la", "lax"},
 }
 
 
@@ -104,10 +127,19 @@ def save_state(state):
 
 
 def prune(state):
+    """Forget long-gone productions, and showtimes that have already happened."""
     cutoff = now() - datetime.timedelta(days=PRUNE_DAYS)
+    yesterday = (now() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
     for key in [k for k, v in state["seen"].items()
                 if (parse_iso(v.get("last_seen", "")) or now()) < cutoff]:
         del state["seen"][key]
+    for record in state["seen"].values():
+        dates = record.get("dates")
+        if not isinstance(dates, dict):
+            continue
+        for date_key in [d for d in dates
+                         if re.match(r"^\d{4}-\d{2}-\d{2}", d) and d[:10] < yesterday]:
+            del dates[date_key]
 
 
 # ----------------------------------------------------------------------------- api
@@ -163,32 +195,77 @@ def region_values(event):
     ).strip().lower()
 
 
-def wanted_region(event):
-    if not REGION or REGION.lower() == "all":
-        return True
+def excluded_region(event):
+    """Exclude-list, not include-list: an unfamiliar region label is kept."""
     haystack = region_values(event)
     if not haystack:
-        return True  # no region data -> don't silently drop it
-    target = REGION.lower()
-    candidates = REGION_ALIASES.get(target, set()) | {target}
-    # Whole-word matching, so the "ny" alias cannot match inside "Albany".
-    return any(re.search(r"\b" + re.escape(alias) + r"\b", haystack)
-               for alias in candidates)
+        return False
+    for region in EXCLUDE_REGIONS:
+        candidates = REGION_ALIASES.get(region, set()) | {region}
+        if any(re.search(r"\b" + re.escape(alias) + r"\b", haystack)
+               for alias in candidates):
+            return True
+    return False
 
 
 def filter_region(events):
-    """Filter to the configured region, but fail open if the filter kills everything."""
-    if not events:
+    if not events or not EXCLUDE_REGIONS:
         return events
-    kept = [e for e in events if wanted_region(e)]
+    kept = [e for e in events if not excluded_region(e)]
     if not kept:
-        log("WARNING: region filter {!r} matched 0 of {} events - "
-            "ignoring the filter this run so nothing is missed. "
-            "Regions seen: {}".format(
-                REGION, len(events),
-                sorted({region_values(e) or "(blank)" for e in events})[:12]))
+        log("WARNING: the exclude list {!r} removed all {} events - ignoring it "
+            "this run so nothing is missed.".format(EXCLUDE_REGIONS, len(events)))
         return events
     return kept
+
+
+# ----------------------------------------------------------------------- showtimes
+
+
+def showtime_key(showtime):
+    return str(showtime.get("date", "") or "").strip()[:16]
+
+
+def available_count(showtime):
+    raw = showtime.get("available_tickets")
+    if raw is None or raw == "":
+        return None                      # unknown, not zero
+    try:
+        return int(raw)
+    except (TypeError, ValueError):
+        return None
+
+
+def showtimes_now(event):
+    """{date_key: available_tickets or None} for every live showtime."""
+    out = {}
+    for showtime in event.get("showtimes") or []:
+        if showtime.get("is_cancelled"):
+            continue
+        key = showtime_key(showtime)
+        if not key:
+            continue
+        count = available_count(showtime)
+        if key in out:
+            previous = out[key]
+            if previous is not None and count is not None:
+                count = max(previous, count)
+            elif count is None:
+                count = previous
+        out[key] = count
+    return out
+
+
+def pretty_date(key):
+    for fmt in ("%Y-%m-%d %H:%M", "%Y-%m-%dT%H:%M"):
+        try:
+            return datetime.datetime.strptime(key, fmt).strftime("%a %b %-d, %-I:%M %p")
+        except ValueError:
+            continue
+    try:
+        return datetime.datetime.strptime(key[:10], "%Y-%m-%d").strftime("%a %b %-d")
+    except ValueError:
+        return key
 
 
 # --------------------------------------------------------------------- notification
@@ -199,120 +276,255 @@ def describe(event):
     venue = str(theater.get("name", "") or "").strip()
     city = str(theater.get("city", "") or "").strip()
     kind = str(event.get("type", "") or "").strip()
-    bits = [b for b in (venue, city) if b]
-    line = " - ".join(bits)
+    line = " - ".join(b for b in (venue, city) if b)
     if kind:
         line = "{} ({})".format(line, kind) if line else kind
     return line
 
 
-def next_showtime(event):
-    dates = sorted(
-        str(s.get("date", "")) for s in (event.get("showtimes") or [])
-        if s.get("date") and not s.get("is_cancelled")
-    )
-    return dates[0][:16].replace("T", " ") if dates else ""
-
-
-def push(title, message, click=None, priority=3, tags=None):
-    if not NTFY_TOPIC:
-        log("NTFY_TOPIC is not set - would have sent: {} / {}".format(title, message))
-        return
-    body = {
-        "topic": NTFY_TOPIC,
-        "title": title,
-        "message": message,
-        "priority": priority,
-        "tags": tags or [],
-    }
-    if click:
-        body["click"] = click
+def _post_ntfy(body):
     request = urllib.request.Request(
         NTFY_SERVER,
         data=json.dumps(body).encode("utf-8"),
         method="POST",
         headers={"Content-Type": "application/json"},
     )
-    try:
-        with urllib.request.urlopen(request, timeout=20) as response:
-            response.read()
-        log("pushed: {}".format(title))
-    except Exception as exc:
-        log("WARNING: push failed ({}): {}".format(exc, title))
+    with urllib.request.urlopen(request, timeout=20) as response:
+        response.read()
 
 
-def announce(new_events):
-    if len(new_events) <= MAX_INDIVIDUAL:
-        for event in new_events:
-            when = next_showtime(event)
-            lines = [describe(event)]
-            if when:
-                lines.append("Next: " + when)
-            push(
-                title=str(event.get("name", "New listing"))[:120],
-                message="\n".join(l for l in lines if l) or "New listing on TheaterExtras",
-                click=PRODUCTION_URL.format(event.get("id", "")),
-                priority=4,
-                tags=["ticket"],
-            )
+def push(title, message, click=None, priority=3, tags=None, state=None, attempts=3):
+    """Send one notification. On repeated failure, queue it so it is never lost."""
+    if not NTFY_TOPIC:
+        log("NTFY_TOPIC is not set - would have sent: {} / {}".format(title, message))
+        return True
+    body = {"topic": NTFY_TOPIC, "title": title, "message": message,
+            "priority": priority, "tags": tags or []}
+    if click:
+        body["click"] = click
+    for attempt in range(attempts):
+        try:
+            _post_ntfy(body)
+            log("pushed: {}".format(title))
+            return True
+        except Exception as exc:
+            log("WARNING: push attempt {} failed ({}): {}".format(attempt + 1, exc, title))
+            if attempt < attempts - 1:
+                time.sleep(2)
+    if state is not None:
+        queue = state.setdefault("pending", [])
+        queued = dict(body)
+        queued["queued_at"] = iso()
+        queue.append(queued)
+        del queue[:-50]
+        log("QUEUED for retry on the next run: {}".format(title))
+    return False
+
+
+def flush_pending(state):
+    """Re-send anything a previous run could not deliver."""
+    queue = state.get("pending") or []
+    if not queue or not NTFY_TOPIC:
+        return
+    cutoff = now() - datetime.timedelta(hours=48)
+    still_failing = []
+    for body in queue:
+        queued_at = parse_iso(body.get("queued_at", ""))
+        if queued_at and queued_at < cutoff:
+            log("dropping a queued alert older than 48h: {}".format(body.get("title")))
+            continue
+        payload = {k: v for k, v in body.items() if k != "queued_at"}
+        try:
+            _post_ntfy(payload)
+            log("re-sent queued alert: {}".format(body.get("title")))
+        except Exception as exc:
+            log("WARNING: queued alert still failing ({}): {}".format(
+                exc, body.get("title")))
+            still_failing.append(body)
+    state["pending"] = still_failing
+
+
+def change_lines(change):
+    """Human-readable summary of one production's changes."""
+    lines = []
+    if change["kind"] == "new":
+        lines.append(describe(change["event"]))
+        dates = sorted(change["dates"])
+        if dates:
+            lines.append("Next: " + pretty_date(dates[0]))
+        added = str(change["event"].get("created_at", "") or "")[:16]
+        if added:
+            lines.append("Listed: " + pretty_date(added))
     else:
-        names = ["- " + str(e.get("name", "?"))[:70] for e in new_events[:10]]
-        if len(new_events) > 10:
-            names.append("...and {} more".format(len(new_events) - 10))
+        if change["drops"]:
+            for key, count in sorted(change["drops"])[:4]:
+                suffix = " ({} left)".format(count) if count else ""
+                lines.append("Tickets released: " + pretty_date(key) + suffix)
+        if change["new_dates"]:
+            shown = [pretty_date(d) for d in sorted(change["new_dates"])[:4]]
+            more = len(change["new_dates"]) - len(shown)
+            lines.append("New dates: " + ", ".join(shown) +
+                         (" +{} more".format(more) if more > 0 else ""))
+        lines.append(describe(change["event"]))
+    return [l for l in lines if l]
+
+
+def headline(change):
+    if change["kind"] == "new":
+        return str(change["event"].get("name", "New listing"))[:120]
+    if change["drops"]:
+        return "Tickets: " + str(change["event"].get("name", ""))[:110]
+    return "New dates: " + str(change["event"].get("name", ""))[:108]
+
+
+def announce(changes, state=None):
+    """One notification per production. New shows go out first."""
+    ordered = sorted(changes, key=lambda c: 0 if c["kind"] == "new" else 1)
+    for index, change in enumerate(ordered[:MAX_INDIVIDUAL]):
         push(
-            title="{} new TheaterExtras listings".format(len(new_events)),
-            message="\n".join(names),
+            title=headline(change),
+            message="\n".join(change_lines(change)) or "Something changed",
+            click=PRODUCTION_URL.format(change["event"].get("id", "")),
+            priority=4,
+            tags=["ticket"],
+            state=state,
+        )
+        if index + 1 < min(len(ordered), MAX_INDIVIDUAL):
+            time.sleep(0.4)      # be polite to ntfy rather than firing a burst
+    overflow = ordered[MAX_INDIVIDUAL:]
+    if overflow:
+        lines = ["- " + str(c["event"].get("name", "?"))[:60] for c in overflow[:15]]
+        if len(overflow) > 15:
+            lines.append("...and {} more".format(len(overflow) - 15))
+        push(
+            title="{} further TheaterExtras updates".format(len(overflow)),
+            message="\n".join(lines),
             click=SITE + "/events/",
             priority=4,
             tags=["ticket"],
+            state=state,
         )
 
 
 # ----------------------------------------------------------------------------- run
 
 
+def record_dates(record, current, stamp):
+    """Overwrite the stored showtime map from the live feed."""
+    dates = record.setdefault("dates", {})
+    for key, count in current.items():
+        entry = dates.setdefault(key, {})
+        entry["avail"] = count
+        entry.setdefault("first_seen", stamp)
+    for key in [k for k in dates if k not in current]:
+        del dates[key]
+
+
 def check(state):
-    """One poll. Returns True if the state changed."""
-    events = filter_region(fetch_events())
-    log("fetched {} events in scope".format(len(events)))
+    raw = fetch_events()
+    events = filter_region(raw)
+    log("feed: {} productions total, {} in scope, {} excluded by region".format(
+        len(raw), len(events), len(raw) - len(events)))
+
+    # Diagnostics that make a miss diagnosable from the run log alone.
+    regions = {}
+    for event in raw:
+        label = region_values(event) or "(blank)"
+        regions[label] = regions.get(label, 0) + 1
+    log("region labels: " + ", ".join(
+        "{} x{}".format(k, v) for k, v in sorted(regions.items())[:20]))
+    newest = sorted(raw, key=lambda e: str(e.get("created_at", "")), reverse=True)[:5]
+    log("newest by created_at: " + " | ".join(
+        "{} ({})".format(str(e.get("name", ""))[:38], e.get("created_at"))
+        for e in newest))
+
     if not events:
         raise RuntimeError("the API returned an empty list - treating as a failure "
                            "rather than assuming every show was removed")
 
     seen = state["seen"]
     stamp = iso()
-    new_events = []
+    cooldown = datetime.timedelta(hours=AVAIL_COOLDOWN_HOURS)
+    changes = []
+
+    # Diagnostic: if the feed never carries ticket counts, "tickets released"
+    # alerts can never fire and the counts below will show it plainly.
+    known_counts = unknown_counts = 0
+    for event in events:
+        for count in showtimes_now(event).values():
+            if count is None:
+                unknown_counts += 1
+            else:
+                known_counts += 1
+    log("showtimes: {} with a ticket count, {} without".format(
+        known_counts, unknown_counts))
+
     for event in events:
         key = str(event.get("id") or event.get("name") or "")
         if not key:
             continue
-        if key in seen:
-            seen[key]["last_seen"] = stamp
-        else:
-            seen[key] = {
-                "name": str(event.get("name", ""))[:200],
-                "first_seen": stamp,
-                "last_seen": stamp,
-            }
-            new_events.append(event)
+        current = showtimes_now(event)
 
-    if new_events:
-        log("NEW: " + " | ".join(str(e.get("name", "?"))[:60] for e in new_events))
-        announce(new_events)
-    return True
+        if key not in seen:
+            record = {"name": str(event.get("name", ""))[:200],
+                      "first_seen": stamp, "last_seen": stamp}
+            record_dates(record, current, stamp)
+            seen[key] = record
+            changes.append({"kind": "new", "event": event,
+                            "dates": list(current), "new_dates": [], "drops": []})
+            continue
+
+        record = seen[key]
+        record["last_seen"] = stamp
+        known = record.get("dates")
+        first_time_tracking = not isinstance(known, dict)
+        if first_time_tracking:
+            # Migrating a production recorded before showtime tracking existed:
+            # adopt its current showtimes silently instead of alerting on all of them.
+            record_dates(record, current, stamp)
+            continue
+
+        new_dates, drops = [], []
+        for date_key, count in current.items():
+            entry = known.get(date_key)
+            if entry is None:
+                if ALERT_NEW_SHOWTIMES:
+                    new_dates.append(date_key)
+                continue
+            was = entry.get("avail")
+            if (ALERT_TICKET_DROPS and count is not None and count > 0
+                    and was is not None and was <= 0):
+                last = parse_iso(entry.get("alerted_at", ""))
+                if not last or (now() - last) > cooldown:
+                    drops.append((date_key, count))
+                    entry["alerted_at"] = stamp
+
+        record_dates(record, current, stamp)
+        for date_key, _ in drops:
+            record["dates"][date_key]["alerted_at"] = stamp
+
+        if new_dates or drops:
+            changes.append({"kind": "update", "event": event, "dates": list(current),
+                            "new_dates": new_dates, "drops": drops})
+
+    if changes:
+        for change in changes:
+            log("CHANGE [{}] {}".format(
+                change["kind"], str(change["event"].get("name", "?"))[:60]))
+        announce(changes, state)
 
 
 def heartbeat(state):
-    last = parse_iso(state.get("last_heartbeat", ""))
     if HEARTBEAT_HOURS <= 0:
         return
+    last = parse_iso(state.get("last_heartbeat", ""))
     if last and (now() - last) < datetime.timedelta(hours=HEARTBEAT_HOURS):
         return
     state["last_heartbeat"] = iso()
     push(
         title="TheaterExtras watcher is alive",
-        message="Tracking {} listings. You will hear from me when something new "
-                "shows up.".format(len(state["seen"])),
+        message="Tracking {} productions. You will hear from me when a show, a date, "
+                "or a batch of tickets appears.".format(len(state["seen"])),
         priority=2,
         tags=["white_check_mark"],
     )
@@ -332,49 +544,52 @@ def report_failure(state, message):
         )
 
 
+def seed(state):
+    """Record everything currently listed without alerting."""
+    flush_pending(state)
+    try:
+        events = filter_region(fetch_events())
+    except RuntimeError as exc:
+        state["seed_pending"] = True
+        report_failure(state, str(exc))
+        save_state(state)
+        return 1
+    stamp = iso()
+    for event in events:
+        key = str(event.get("id") or event.get("name") or "")
+        if not key:
+            continue
+        record = {"name": str(event.get("name", ""))[:200],
+                  "first_seen": stamp, "last_seen": stamp}
+        record_dates(record, showtimes_now(event), stamp)
+        state["seen"][key] = record
+    state.pop("seed_pending", None)
+    state.pop("last_error_push", None)
+    state["last_heartbeat"] = iso()
+    save_state(state)
+    push(
+        title="TheaterExtras watcher armed",
+        message="Baseline set: {} productions. From here on you get a push for a new "
+                "show, a new date, or tickets released.".format(len(state["seen"])),
+        priority=3,
+        tags=["eyes"],
+    )
+    log("seeded {} productions; no alerts sent for the baseline".format(len(state["seen"])))
+    return 0
+
+
 def main():
     if not TOKEN:
         log("ERROR: TE_ACCESS_TOKEN is not set.")
         return 1
 
     state = load_state()
-    first_run = state is None or bool(state.get("seed_pending"))
     if state is None:
-        state = {"seen": {}, "created_at": iso()}
+        return seed({"seen": {}, "created_at": iso()})
+    if state.get("seed_pending"):
+        return seed(state)
 
-    if first_run:
-        # Seed silently: everything currently listed counts as already known.
-        try:
-            events = filter_region(fetch_events())
-        except RuntimeError as exc:
-            # Never write an empty baseline - that would make every existing
-            # listing look "new" on the next run.
-            state["seed_pending"] = True
-            report_failure(state, str(exc))
-            save_state(state)
-            return 1
-        stamp = iso()
-        for event in events:
-            key = str(event.get("id") or event.get("name") or "")
-            if key:
-                state["seen"][key] = {
-                    "name": str(event.get("name", ""))[:200],
-                    "first_seen": stamp,
-                    "last_seen": stamp,
-                }
-        state.pop("seed_pending", None)
-        state.pop("last_error_push", None)
-        state["last_heartbeat"] = iso()
-        save_state(state)
-        push(
-            title="TheaterExtras watcher armed",
-            message="Baseline set: {} listings. From here on you get a push the "
-                    "moment anything new appears.".format(len(state["seen"])),
-            priority=3,
-            tags=["eyes"],
-        )
-        log("seeded {} events; no alerts sent for the baseline".format(len(state["seen"])))
-        return 0
+    flush_pending(state)
 
     failures = 0
     for attempt in range(max(1, REPEATS)):
@@ -387,6 +602,7 @@ def main():
         if attempt < REPEATS - 1:
             time.sleep(SLEEP_SECONDS)
 
+    flush_pending(state)
     prune(state)
     heartbeat(state)
     save_state(state)
