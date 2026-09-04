@@ -15,9 +15,12 @@ permissions:
 jobs:
   watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 1
 
       - uses: actions/setup-python@v5
         with:
@@ -30,10 +33,10 @@ jobs:
           TE_EXCLUDE_REGIONS: 'Los Angeles'
           ALERT_NEW_SHOWTIMES: 'on'
           ALERT_TICKET_DROPS: 'on'
-          AVAIL_COOLDOWN_HOURS: '12'
+          AVAIL_COOLDOWN_HOURS: '2'
           MAX_INDIVIDUAL: '20'
-          REPEATS: '5'
-          SLEEP_SECONDS: '60'
+          REPEATS: '20'
+          SLEEP_SECONDS: '30'
           HEARTBEAT_HOURS: '168'
         run: python watch.py
 
