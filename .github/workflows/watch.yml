@@ -27,9 +27,13 @@ jobs:
         env:
           TE_ACCESS_TOKEN: ${{ secrets.TE_ACCESS_TOKEN }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          TE_REGION: 'New York'
-          REPEATS: '3'
-          SLEEP_SECONDS: '120'
+          TE_EXCLUDE_REGIONS: 'Los Angeles'
+          ALERT_NEW_SHOWTIMES: 'on'
+          ALERT_TICKET_DROPS: 'on'
+          AVAIL_COOLDOWN_HOURS: '12'
+          MAX_INDIVIDUAL: '20'
+          REPEATS: '5'
+          SLEEP_SECONDS: '60'
           HEARTBEAT_HOURS: '168'
         run: python watch.py
 
