@@ -686,12 +686,16 @@ def main():
         except RuntimeError as exc:
             failures += 1
             report_failure(state, str(exc))
+        # Save after EVERY check, not just at the end. Running as a long-lived
+        # service, the end may be days away - and an unsaved state means every
+        # listing looks new again after a restart.
+        prune(state)
+        heartbeat(state)
+        save_state(state)
         if attempt < REPEATS - 1:
             time.sleep(SLEEP_SECONDS)
 
     flush_pending(state)
-    prune(state)
-    heartbeat(state)
     save_state(state)
     return 1 if failures == REPEATS else 0
 
