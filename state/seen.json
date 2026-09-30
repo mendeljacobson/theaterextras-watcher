@@ -16,7 +16,7 @@
     }
    },
    "first_seen": "2026-09-28T23:32:10+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "Maltertech"
   },
   "019e83db-583d-75d8-829f-f729612d9b42": {
@@ -34,7 +34,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "New York Jets vs Cleveland Browns"
   },
   "019f0a09-ed99-7fe0-9e10-e5c85fafbbee": {
@@ -46,7 +46,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "New York Jets vs Miami Dolphins"
   },
   "019f4756-ef1f-7859-81e7-60486937d240": {
@@ -87,7 +87,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "DCINY: Spirit of Freedom at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "019ff13c-48ce-7512-a45b-574e4eb29ce0": {
@@ -98,7 +98,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "DCINY: Total Vocal with Deke Sharon, A Holiday Celebration at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "019ff6e0-b422-7be4-b1ee-ef18c2d59562": {
@@ -208,7 +208,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "After All These Years"
   },
   "01a05886-0ccb-7419-8a34-601c9c8e5c6b": {
@@ -373,7 +373,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "New York Jets vs Denver Broncos"
   },
   "01a062b4-920c-75dd-8225-b22e58f2f0be": {
@@ -384,7 +384,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "DCINY: Sounds of the Season at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "01a06833-9e2f-7ab9-8bd1-e9cff671d13c": {
@@ -449,7 +449,7 @@
     }
    },
    "first_seen": "2026-09-08T17:23:34+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "ReproEco"
   },
   "01a081f8-c567-7a9c-827f-153deac5ceb8": {
@@ -466,15 +466,11 @@
     }
    },
    "first_seen": "2026-09-08T19:58:10+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "Going Bacharach"
   },
   "01a083c9-7c38-7159-8d65-e18fd00266ff": {
    "dates": {
-    "2026-09-30 14:30": {
-     "avail": 38,
-     "first_seen": "2026-09-27T19:03:02+00:00"
-    },
     "2026-09-30 19:30": {
      "avail": 36,
      "first_seen": "2026-09-27T19:03:02+00:00"
@@ -505,7 +501,7 @@
     }
    },
    "first_seen": "2026-09-09T04:51:37+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "The Hope Theory"
   },
   "01a086dd-c2c2-7c41-a68a-14baacf7eec5": {
@@ -529,7 +525,7 @@
   "01a087b6-ced2-73df-9db8-ddfe1808f8eb": {
    "dates": {
     "2026-09-30 19:00": {
-     "avail": 9,
+     "avail": 10,
      "first_seen": "2026-09-29T20:10:56+00:00"
     },
     "2026-10-01 19:00": {
@@ -550,7 +546,7 @@
     }
    },
    "first_seen": "2026-09-09T19:48:50+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "Lost in Del Valle"
   },
   "01a08841-dfcc-7644-82cc-46041dd85478": {
@@ -659,7 +655,7 @@
     }
    },
    "first_seen": "2026-09-11T19:46:38+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "In Honor of Jean-Michel Basquiat"
   },
   "01a0a067-ff0f-7f1f-a68b-73bcc7fcdf7d": {
@@ -678,7 +674,7 @@
     }
    },
    "first_seen": "2026-09-14T18:31:24+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "A Thousand Natural Shocks"
   },
   "01a0a06c-a5d9-7de1-bccf-307070faeb7d": {
@@ -731,7 +727,7 @@
     }
    },
    "first_seen": "2026-09-15T18:19:05+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "Harmonic Dissonance"
   },
   "01a0a5b5-67ee-7f4c-8525-37cde6688c0b": {
@@ -748,7 +744,7 @@
     }
    },
    "first_seen": "2026-09-15T18:19:05+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "El Pendulo"
   },
   "01a0a5bd-f883-72ec-ac12-4b7c27a501be": {
@@ -759,7 +755,7 @@
     }
    },
    "first_seen": "2026-09-15T18:19:05+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "BigVision Speaker Series - Tom Kirdahy"
   },
   "01a0a5c4-a0b8-79a6-8295-1ffa8f98ab50": {
@@ -908,7 +904,7 @@
     }
    },
    "first_seen": "2026-09-22T18:18:38+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "GUAC"
   },
   "01a0cd0d-ca40-7be6-ba85-02701f86b6cf": {
@@ -920,23 +916,23 @@
   "01a0cd1f-0c3a-76d7-8b9a-2bd0f11a24de": {
    "dates": {
     "2026-09-30 19:30": {
-     "avail": 16,
+     "avail": 14,
      "first_seen": "2026-09-23T12:09:04+00:00"
     }
    },
    "first_seen": "2026-09-23T12:09:04+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "Ben Macintyre with Graydon Carter: Redwood"
   },
   "01a0ce1b-9487-7af8-a9c7-33904f078bd3": {
    "dates": {
     "2026-10-02 19:00": {
-     "avail": 37,
+     "avail": 39,
      "first_seen": "2026-09-23T12:09:04+00:00"
     }
    },
    "first_seen": "2026-09-23T12:09:04+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "JOSE LIMON DANCE COMPANY "
   },
   "01a0ce1e-60cc-771d-ba21-9ca69db16636": {
@@ -948,12 +944,12 @@
   "01a0d1f9-f036-7bd0-8759-9e289b7c1862": {
    "dates": {
     "2026-10-11 19:30": {
-     "avail": 140,
+     "avail": 138,
      "first_seen": "2026-09-24T10:16:27+00:00"
     }
    },
    "first_seen": "2026-09-24T10:16:27+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "Temple University Studio, Symphony and Jazz Orchestras – American Music and Photography"
   },
   "01a0d1ff-ae34-76a0-a08a-7baad899f1ed": {
@@ -964,7 +960,7 @@
     }
    },
    "first_seen": "2026-09-24T10:16:27+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "The Media and The Midterms: Determining America’s Future"
   },
   "01a0d4f3-7957-79dc-9e86-843e1859257c": {
@@ -985,18 +981,18 @@
     }
    },
    "first_seen": "2026-09-25T10:13:36+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "Myth"
   },
   "01a0df29-d678-7f2d-b32d-c0500b345e61": {
    "dates": {
     "2026-10-03 14:00": {
-     "avail": 30,
+     "avail": 36,
      "first_seen": "2026-09-26T20:09:21+00:00"
     }
    },
    "first_seen": "2026-09-26T20:09:21+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "NEW YORK PHILHARMONIC- Tocar y luchar (To Play and To Strive)"
   },
   "01a0e933-f603-7013-8d80-edd5e64ce27a": {
@@ -1007,7 +1003,7 @@
     }
    },
    "first_seen": "2026-09-28T18:46:46+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "BARD EAST/WEST ENSEMBLE AND CHINA NOW CHAMBER ORCHESTRA at Zankel Hall at Carnegie Hall"
   },
   "01a0e939-61cc-799e-8b83-7ac8b08beb5a": {
@@ -1018,19 +1014,19 @@
     }
    },
    "first_seen": "2026-09-28T18:46:46+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "T. J. English in Conversation"
   },
   "01a0e93e-34c8-7c59-b42f-7311002ae373": {
    "dates": {
     "2026-09-30 19:00": {
      "alerted_at": "2026-09-30T08:42:44+00:00",
-     "avail": 10,
+     "avail": 0,
      "first_seen": "2026-09-28T18:46:46+00:00"
     }
    },
    "first_seen": "2026-09-28T18:46:46+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "NEW YORK PHILHARMONIC  - Gustavo Dudamel’s Inaugural Gala"
   },
   "01a0ebbc-fe47-7fae-b996-715608aefd5c": {
@@ -1041,18 +1037,18 @@
     }
    },
    "first_seen": "2026-09-29T09:01:17+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "54 SINGS THE MUSIC OF SCRUBS VOL. 2"
   },
   "01a0ebbf-c62d-77e7-97a3-1aa0a2c0cb84": {
    "dates": {
     "2026-10-01 19:00": {
-     "avail": 6,
+     "avail": 3,
      "first_seen": "2026-09-29T09:01:17+00:00"
     }
    },
    "first_seen": "2026-09-29T09:01:17+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "MARTINA BARTA – WHAT THE WORLD NEEDS NOW IS LOVE: A BURT BACHARACH TRIBUTE"
   },
   "01a0ee8f-7945-7a06-84ff-3ba0d20f8f42": {
@@ -1069,16 +1065,16 @@
   "01a0f11a-a7e9-74dc-9de7-7c00487a51b0": {
    "dates": {
     "2026-10-03 12:30": {
-     "avail": 20,
+     "avail": 18,
      "first_seen": "2026-09-30T08:42:44+00:00"
     },
     "2026-10-03 15:30": {
-     "avail": 20,
+     "avail": 19,
      "first_seen": "2026-09-30T08:42:44+00:00"
     }
    },
    "first_seen": "2026-09-30T08:42:44+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "NOW IS THE TIME: ARTISTS GO TO WORK – PART II"
   },
   "01a0f12a-1e21-7a69-8a8a-9f654473dc9e": {
@@ -1092,17 +1088,28 @@
      "first_seen": "2026-09-30T08:42:44+00:00"
     },
     "2026-10-03 17:00": {
-     "avail": 6,
+     "avail": 4,
      "first_seen": "2026-09-30T08:42:44+00:00"
     },
     "2026-10-04 15:00": {
-     "avail": 6,
+     "avail": 4,
      "first_seen": "2026-09-30T08:42:44+00:00"
     }
    },
    "first_seen": "2026-09-30T08:42:44+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "Birds of North America"
+  },
+  "01a0f243-60c2-7a64-b325-805b4e653933": {
+   "dates": {
+    "2026-10-04 15:00": {
+     "avail": 90,
+     "first_seen": "2026-09-30T15:18:17+00:00"
+    }
+   },
+   "first_seen": "2026-09-30T15:18:17+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
+   "name": "FANTASY: THE EARTH, WIND & FIRE EXPERIENCE"
   },
   "48291": {
    "dates": {},
@@ -1118,7 +1125,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "Dueling Pianos NYC"
   },
   "49387": {
@@ -1129,7 +1136,7 @@
     }
    },
    "first_seen": "2026-09-28T18:46:46+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "Katsura Sunshine's Rakugo"
   },
   "50857": {
@@ -1169,7 +1176,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "Marnie Klar Sings Carly Simon"
   },
   "51887": {
@@ -1214,9 +1221,9 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-09-30T08:52:20+00:00",
+   "last_seen": "2026-09-30T15:27:58+00:00",
    "name": "Petite Rouge"
   }
  },
- "updated_at": "2026-09-30T08:52:20+00:00"
+ "updated_at": "2026-09-30T15:27:58+00:00"
 }
