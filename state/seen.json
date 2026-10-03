@@ -29,7 +29,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "New York Jets vs Cleveland Browns"
   },
   "019f0a09-ed99-7fe0-9e10-e5c85fafbbee": {
@@ -41,7 +41,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "New York Jets vs Miami Dolphins"
   },
   "019f4756-ef1f-7859-81e7-60486937d240": {
@@ -82,7 +82,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "DCINY: Spirit of Freedom at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "019ff13c-48ce-7512-a45b-574e4eb29ce0": {
@@ -93,7 +93,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "DCINY: Total Vocal with Deke Sharon, A Holiday Celebration at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "019ff6e0-b422-7be4-b1ee-ef18c2d59562": {
@@ -173,7 +173,7 @@
   "01a0543f-833a-7eec-8d65-5265ec5c01aa": {
    "dates": {
     "2026-10-03 15:00": {
-     "avail": 2,
+     "avail": 1,
      "first_seen": "2026-09-27T19:03:02+00:00"
     },
     "2026-10-03 19:00": {
@@ -185,12 +185,12 @@
      "first_seen": "2026-09-27T19:03:02+00:00"
     },
     "2026-10-07 19:00": {
-     "avail": 10,
+     "avail": 8,
      "first_seen": "2026-10-02T17:56:33+00:00"
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "After All These Years"
   },
   "01a05886-0ccb-7419-8a34-601c9c8e5c6b": {
@@ -344,7 +344,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "New York Jets vs Denver Broncos"
   },
   "01a062b4-920c-75dd-8225-b22e58f2f0be": {
@@ -355,7 +355,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "DCINY: Sounds of the Season at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "01a06833-9e2f-7ab9-8bd1-e9cff671d13c": {
@@ -382,7 +382,7 @@
     }
    },
    "first_seen": "2026-09-03T18:05:28+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Becoming Hamlet"
   },
   "01a06843-46de-7976-bffd-087e10892f8d": {
@@ -422,12 +422,7 @@
    "name": "Netflix’s Best of the Best: Special Screening and Cast and Creators in Conversation"
   },
   "01a0814b-689e-71b5-81e3-8cdc9c7ce57a": {
-   "dates": {
-    "2026-10-01 19:00": {
-     "avail": 7,
-     "first_seen": "2026-09-15T18:19:05+00:00"
-    }
-   },
+   "dates": {},
    "first_seen": "2026-09-08T17:23:34+00:00",
    "last_seen": "2026-10-01T16:30:07+00:00",
    "name": "ReproEco"
@@ -447,7 +442,7 @@
   "01a083c9-7c38-7159-8d65-e18fd00266ff": {
    "dates": {
     "2026-10-07 14:30": {
-     "avail": 15,
+     "avail": 13,
      "first_seen": "2026-10-02T17:56:33+00:00"
     },
     "2026-10-07 19:30": {
@@ -456,7 +451,7 @@
     }
    },
    "first_seen": "2026-09-09T04:51:37+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "The Hope Theory"
   },
   "01a086dd-c2c2-7c41-a68a-14baacf7eec5": {
@@ -493,7 +488,7 @@
     }
    },
    "first_seen": "2026-09-09T19:48:50+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Lost in Del Valle"
   },
   "01a08841-dfcc-7644-82cc-46041dd85478": {
@@ -590,13 +585,13 @@
     }
    },
    "first_seen": "2026-09-11T19:46:38+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "In Honor of Jean-Michel Basquiat"
   },
   "01a0a067-ff0f-7f1f-a68b-73bcc7fcdf7d": {
    "dates": {
     "2026-10-03 19:30": {
-     "avail": 8,
+     "avail": 6,
      "first_seen": "2026-09-14T21:57:41+00:00"
     },
     "2026-10-05 19:30": {
@@ -605,7 +600,7 @@
     }
    },
    "first_seen": "2026-09-14T18:31:24+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "A Thousand Natural Shocks"
   },
   "01a0a06c-a5d9-7de1-bccf-307070faeb7d": {
@@ -664,7 +659,7 @@
     }
    },
    "first_seen": "2026-09-15T18:19:05+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Scattering Naimah's Ashes Amongst the Ghosts of Greenwich Village"
   },
   "01a0a5bb-e4b8-7d0e-acf1-40a892f063bb": {
@@ -675,16 +670,11 @@
     }
    },
    "first_seen": "2026-09-15T18:19:05+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "El Pendulo"
   },
   "01a0a5bd-f883-72ec-ac12-4b7c27a501be": {
-   "dates": {
-    "2026-10-01 19:00": {
-     "avail": 14,
-     "first_seen": "2026-09-15T18:19:05+00:00"
-    }
-   },
+   "dates": {},
    "first_seen": "2026-09-15T18:19:05+00:00",
    "last_seen": "2026-10-01T16:30:07+00:00",
    "name": "BigVision Speaker Series - Tom Kirdahy"
@@ -827,7 +817,7 @@
     }
    },
    "first_seen": "2026-09-22T18:18:38+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "GUAC"
   },
   "01a0cd0d-ca40-7be6-ba85-02701f86b6cf": {
@@ -867,16 +857,11 @@
     }
    },
    "first_seen": "2026-09-24T10:16:27+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Temple University Studio, Symphony and Jazz Orchestras – American Music and Photography"
   },
   "01a0d1ff-ae34-76a0-a08a-7baad899f1ed": {
-   "dates": {
-    "2026-10-01 18:30": {
-     "avail": 22,
-     "first_seen": "2026-09-24T10:16:27+00:00"
-    }
-   },
+   "dates": {},
    "first_seen": "2026-09-24T10:16:27+00:00",
    "last_seen": "2026-09-30T20:14:45+00:00",
    "name": "The Media and The Midterms: Determining America’s Future"
@@ -895,7 +880,7 @@
     }
    },
    "first_seen": "2026-09-25T10:13:36+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Myth"
   },
   "01a0df29-d678-7f2d-b32d-c0500b345e61": {
@@ -906,7 +891,7 @@
     }
    },
    "first_seen": "2026-09-26T20:09:21+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "NEW YORK PHILHARMONIC- Tocar y luchar (To Play and To Strive)"
   },
   "01a0e933-f603-7013-8d80-edd5e64ce27a": {
@@ -939,12 +924,7 @@
    "name": "54 SINGS THE MUSIC OF SCRUBS VOL. 2"
   },
   "01a0ebbf-c62d-77e7-97a3-1aa0a2c0cb84": {
-   "dates": {
-    "2026-10-01 19:00": {
-     "avail": 1,
-     "first_seen": "2026-09-29T09:01:17+00:00"
-    }
-   },
+   "dates": {},
    "first_seen": "2026-09-29T09:01:17+00:00",
    "last_seen": "2026-10-01T16:30:07+00:00",
    "name": "MARTINA BARTA – WHAT THE WORLD NEEDS NOW IS LOVE: A BURT BACHARACH TRIBUTE"
@@ -967,7 +947,7 @@
     }
    },
    "first_seen": "2026-09-30T08:42:44+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "NOW IS THE TIME: ARTISTS GO TO WORK – PART II"
   },
   "01a0f12a-1e21-7a69-8a8a-9f654473dc9e": {
@@ -982,7 +962,7 @@
     }
    },
    "first_seen": "2026-09-30T08:42:44+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Birds of North America"
   },
   "01a0f243-60c2-7a64-b325-805b4e653933": {
@@ -1021,12 +1001,12 @@
   "01a0f3e1-d225-7496-a836-266930011b55": {
    "dates": {
     "2026-10-03 19:15": {
-     "avail": 8,
+     "avail": 4,
      "first_seen": "2026-10-02T21:37:30+00:00"
     }
    },
    "first_seen": "2026-09-30T20:05:09+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Lean-To"
   },
   "01a0fc2f-c5cd-79ad-b56d-6e88ab845bfd": {
@@ -1037,7 +1017,7 @@
     }
    },
    "first_seen": "2026-10-02T12:26:46+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Ruth Margalit in Conversation with David Remnick: In the Belly of the Whale"
   },
   "01a0fc35-fac1-77d4-9b95-9f3bb090f4c1": {
@@ -1048,7 +1028,7 @@
     }
    },
    "first_seen": "2026-10-02T12:26:46+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Carissa Schumacher with Marie Forleo: The Alchemy Transmissions 03 Oct Saturday"
   },
   "01a0fc38-3a9e-7733-a7af-17c406f4a676": {
@@ -1059,13 +1039,13 @@
     }
    },
    "first_seen": "2026-10-02T12:26:46+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Uptown Showdown: Hot vs. Cold"
   },
   "01a0fc3a-4cb2-710d-8c3b-fa1a301e29db": {
    "dates": {
     "2026-10-03 15:00": {
-     "avail": 11,
+     "avail": 10,
      "first_seen": "2026-10-02T12:26:46+00:00"
     },
     "2026-10-03 19:00": {
@@ -1078,7 +1058,7 @@
     }
    },
    "first_seen": "2026-10-02T12:26:46+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Gross Prophets"
   },
   "01a0fc4a-8386-7281-9308-b1c7273aa550": {
@@ -1089,7 +1069,7 @@
     }
    },
    "first_seen": "2026-10-02T12:26:46+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "David Treuer: The Savage Mind"
   },
   "01a0fc93-26c4-77a7-85f7-92d857592c96": {
@@ -1100,7 +1080,7 @@
     }
    },
    "first_seen": "2026-10-02T12:26:46+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Classical Cool: Ich Bin Ein New Yorker – A Concert for Kids and Families"
   },
   "01a0fccb-148c-72e2-a0b1-26ff2a30ba14": {
@@ -1111,7 +1091,7 @@
     }
    },
    "first_seen": "2026-10-02T17:56:33+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "The Ask"
   },
   "01a0fcde-3ee7-7612-9382-360b9f02c595": {
@@ -1122,7 +1102,7 @@
     }
    },
    "first_seen": "2026-10-02T17:56:33+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "ICONS OF CULTURE: esperanza spalding"
   },
   "01a0fd98-b09f-756b-b525-ebf5b6a6fbc3": {
@@ -1133,18 +1113,18 @@
     }
    },
    "first_seen": "2026-10-02T17:56:33+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "The Knights with Pianist Emanuel Ax"
   },
   "01a0fd9d-5a4d-7aba-a9a1-b2f4cf1935dc": {
    "dates": {
     "2026-10-04 13:30": {
-     "avail": 1,
+     "avail": 0,
      "first_seen": "2026-10-02T21:37:30+00:00"
     }
    },
    "first_seen": "2026-10-02T17:56:33+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "How Shakespeare Saved My Life"
   },
   "01a0fda1-e4d7-7e39-8a11-016d44061c32": {
@@ -1155,7 +1135,7 @@
     }
    },
    "first_seen": "2026-10-02T17:56:33+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "54 Sings Broadway’s Greatest Hits!"
   },
   "01a0fda5-9ea7-743e-b88a-3bedfb6ee8f5": {
@@ -1166,18 +1146,18 @@
     }
    },
    "first_seen": "2026-10-02T17:56:33+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "A Night Of Cool Starring Russell Moss and his Five Piece Orchestra"
   },
   "01a0fda7-2c83-70a6-88a3-a05ac60975e0": {
    "dates": {
     "2026-10-06 19:30": {
-     "avail": 6,
+     "avail": 4,
      "first_seen": "2026-10-02T17:56:33+00:00"
     }
    },
    "first_seen": "2026-10-02T17:56:33+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Orli Shaham: In Clara’s Hands"
   },
   "01a0fda9-cc33-79e2-b786-9d729fd9d8af": {
@@ -1188,7 +1168,7 @@
     }
    },
    "first_seen": "2026-10-02T17:56:33+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "TRIBUTE TO FRANKIE VALLI and More!"
   },
   "01a0fdb9-1cbf-7b14-b193-4989030b2751": {
@@ -1199,7 +1179,7 @@
     }
    },
    "first_seen": "2026-10-02T17:56:33+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Falls for Jodie"
   },
   "01a0fdbe-22b2-79e6-a106-05e807c7a476": {
@@ -1210,7 +1190,7 @@
     }
    },
    "first_seen": "2026-10-02T17:56:33+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "La Música de mi Casa: An"
   },
   "01a0fdd8-dec8-7c28-8608-f7fd3b04351d": {
@@ -1221,7 +1201,7 @@
     }
    },
    "first_seen": "2026-10-02T21:37:30+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "More Than All The Sky"
   },
   "01a0fde8-8600-7747-a29a-be3763fde007": {
@@ -1232,7 +1212,7 @@
     }
    },
    "first_seen": "2026-10-02T21:37:30+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Roots Intertwined"
   },
   "01a0fdf3-888b-737e-905a-b567448edd78": {
@@ -1243,7 +1223,7 @@
     }
    },
    "first_seen": "2026-10-02T21:37:30+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Action"
   },
   "48291": {
@@ -1260,7 +1240,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Dueling Pianos NYC"
   },
   "49387": {
@@ -1271,7 +1251,7 @@
     }
    },
    "first_seen": "2026-09-28T18:46:46+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Katsura Sunshine's Rakugo"
   },
   "50857": {
@@ -1294,7 +1274,7 @@
     }
    },
    "first_seen": "2026-10-02T17:56:33+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Bouncin with Bud. Bud Powell Celebration"
   },
   "51333": {
@@ -1363,9 +1343,9 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-10-02T21:47:07+00:00",
+   "last_seen": "2026-10-03T00:52:03+00:00",
    "name": "Petite Rouge"
   }
  },
- "updated_at": "2026-10-02T21:47:07+00:00"
+ "updated_at": "2026-10-03T00:52:03+00:00"
 }
