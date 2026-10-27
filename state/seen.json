@@ -83,7 +83,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "DCINY: Spirit of Freedom at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "019ff13c-48ce-7512-a45b-574e4eb29ce0": {
@@ -94,7 +94,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "DCINY: Total Vocal with Deke Sharon, A Holiday Celebration at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "019ff6e0-b422-7be4-b1ee-ef18c2d59562": {
@@ -137,7 +137,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Tanya Moberly Repetoire"
   },
   "01a043d8-10b1-7a1a-9bd7-50190deb9671": {
@@ -347,7 +347,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "New York Jets vs Denver Broncos"
   },
   "01a062b4-920c-75dd-8225-b22e58f2f0be": {
@@ -359,7 +359,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "DCINY: Sounds of the Season at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "01a06833-9e2f-7ab9-8bd1-e9cff671d13c": {
@@ -429,9 +429,14 @@
    "name": "9/11  A Conversation & Retrospective.  Moderated by Stephanie Ruhle of MSNOW."
   },
   "01a08279-19bc-7804-9bc2-4e19918597fd": {
-   "dates": {},
+   "dates": {
+    "2026-10-28 19:30": {
+     "avail": 16,
+     "first_seen": "2026-10-27T20:39:15+00:00"
+    }
+   },
    "first_seen": "2026-09-08T19:58:10+00:00",
-   "last_seen": "2026-10-25T15:09:15+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Going Bacharach"
   },
   "01a083c9-7c38-7159-8d65-e18fd00266ff": {
@@ -461,12 +466,12 @@
      "first_seen": "2026-10-24T16:36:15+00:00"
     },
     "2026-11-01 14:30": {
-     "avail": 13,
+     "avail": 10,
      "first_seen": "2026-10-24T16:36:15+00:00"
     }
    },
    "first_seen": "2026-09-09T04:51:37+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "The Hope Theory"
   },
   "01a086dd-c2c2-7c41-a68a-14baacf7eec5": {
@@ -704,7 +709,7 @@
      "first_seen": "2026-10-26T17:23:44+00:00"
     },
     "2026-10-29 12:00": {
-     "avail": 20,
+     "avail": 19,
      "first_seen": "2026-10-26T17:23:44+00:00"
     },
     "2026-10-30 12:00": {
@@ -721,7 +726,7 @@
     }
    },
    "first_seen": "2026-09-16T16:20:48+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "PaleyExhibit NBC100: A Century Together"
   },
   "01a0ab7c-0ee0-73ab-9150-45c503516ace": {
@@ -922,7 +927,7 @@
     }
    },
    "first_seen": "2026-09-30T20:05:09+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "COPPERFIELD: The New Musical"
   },
   "01a0f32e-ac43-7641-9664-b5a551db9aac": {
@@ -975,12 +980,8 @@
   },
   "01a0fccb-148c-72e2-a0b1-26ff2a30ba14": {
    "dates": {
-    "2026-10-27 19:00": {
-     "avail": 2,
-     "first_seen": "2026-10-25T22:49:10+00:00"
-    },
     "2026-10-28 14:00": {
-     "avail": 7,
+     "avail": 3,
      "first_seen": "2026-10-26T17:23:44+00:00"
     },
     "2026-10-28 19:00": {
@@ -988,7 +989,7 @@
      "first_seen": "2026-10-26T17:23:44+00:00"
     },
     "2026-10-29 19:00": {
-     "avail": 8,
+     "avail": 7,
      "first_seen": "2026-10-26T17:23:44+00:00"
     },
     "2026-10-30 20:00": {
@@ -997,7 +998,7 @@
     }
    },
    "first_seen": "2026-10-02T17:56:33+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "The Ask"
   },
   "01a0fcde-3ee7-7612-9382-360b9f02c595": {
@@ -1087,7 +1088,7 @@
     }
    },
    "first_seen": "2026-10-03T14:53:01+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Musicians From Marlboro at Weill Recital Hall at Carnegie Hall"
   },
   "01a101f9-a389-71a0-8752-8348c829ab62": {
@@ -1117,7 +1118,7 @@
     }
    },
    "first_seen": "2026-10-03T14:53:01+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "DCINY: Jubilaeum Holiday Gala at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "01a1020b-e0d3-77ca-aa41-3c80965f8c75": {
@@ -1153,7 +1154,7 @@
     }
    },
    "first_seen": "2026-10-03T14:53:01+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Columbus Symphony Orchestra 75th Anniversary Concert at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "01a10224-db94-7449-8d87-b493edf3501b": {
@@ -1216,7 +1217,7 @@
     }
    },
    "first_seen": "2026-10-03T14:53:40+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Reading Series: “Eleanore” Written by Craig Lucas, Directed by Sean Daniels"
   },
   "01a10242-541e-70e8-a1a1-457bdb1c1394": {
@@ -1233,7 +1234,7 @@
     }
    },
    "first_seen": "2026-10-03T14:58:40+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Christmas in the Big Apple at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "01a102de-e133-763f-9331-be2df7b6ce9c": {
@@ -1245,7 +1246,7 @@
     }
    },
    "first_seen": "2026-10-03T18:20:26+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "16th Annual Christmas in New York at Stern Audiorium/Perelman Stage at Carnegie Hall"
   },
   "01a102e6-32fd-7cb3-8a83-d7d1bfdb97f7": {
@@ -1275,12 +1276,12 @@
   "01a102f8-d916-79c5-80ee-d9fb82708abc": {
    "dates": {
     "2026-11-24 21:30": {
-     "avail": 8,
+     "avail": 7,
      "first_seen": "2026-10-27T16:09:34+00:00"
     }
    },
    "first_seen": "2026-10-03T18:20:26+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Anderson Brothers play Benny Goodman"
   },
   "01a102fc-2b06-70f0-a613-67d7d5d6cd53": {
@@ -1326,7 +1327,7 @@
     }
    },
    "first_seen": "2026-10-06T01:28:20+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Impossible But True"
   },
   "01a10ce8-237b-7011-8efb-192863d31e43": {
@@ -1493,7 +1494,7 @@
     }
    },
    "first_seen": "2026-10-09T17:05:27+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "The Man Who Laughs"
   },
   "01a12187-30fe-7c61-8dfd-838133d1b587": {
@@ -1682,7 +1683,7 @@
     }
    },
    "first_seen": "2026-10-13T15:17:25+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Anywhere, Everywhere...Us"
   },
   "01a13587-dc49-71df-9911-7763d684b338": {
@@ -1714,7 +1715,7 @@
      "first_seen": "2026-10-24T16:36:15+00:00"
     },
     "2026-11-14 20:00": {
-     "avail": 3,
+     "avail": 1,
      "first_seen": "2026-10-24T16:36:15+00:00"
     },
     "2026-11-15 15:00": {
@@ -1723,7 +1724,7 @@
     }
    },
    "first_seen": "2026-10-13T15:17:25+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "The Flowers of Forest Hills"
   },
   "01a1358a-0532-7146-a115-2a0b5094bb53": {
@@ -1782,12 +1783,12 @@
   "01a13fe7-a1e2-750a-b4e7-47b587822776": {
    "dates": {
     "2026-10-29 19:30": {
-     "avail": 22,
+     "avail": 23,
      "first_seen": "2026-10-15T16:21:13+00:00"
     }
    },
    "first_seen": "2026-10-15T16:21:13+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Youl Sun, Piano at Zankel Hall at Carnegie Hall"
   },
   "01a13feb-efb0-79f0-949e-81d3a27f85f0": {
@@ -1798,7 +1799,7 @@
     }
    },
    "first_seen": "2026-10-15T16:21:13+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Oratorio Society of New York Fauré, Beethoven, Brahms, & Barnes at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "01a13fee-6549-7e94-a982-7c37a72f188f": {
@@ -1850,7 +1851,7 @@
     }
    },
    "first_seen": "2026-10-16T14:14:10+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Thalia Book Club: Arthur C. Clarke's 2001: A Space Odyssey"
   },
   "01a145b9-5d00-77d7-ad3b-ffd8c1b978e0": {
@@ -1922,12 +1923,12 @@
   "01a1549a-77ec-7c8b-85a9-86cc02771e5c": {
    "dates": {
     "2026-10-30 19:30": {
-     "avail": 21,
+     "avail": 22,
      "first_seen": "2026-10-19T17:18:35+00:00"
     }
    },
    "first_seen": "2026-10-19T17:18:35+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "East Coast Contemporary Ballet - DANCESCAPES"
   },
   "01a154a9-477d-7637-aa68-9717d20260ca": {
@@ -1974,7 +1975,7 @@
     }
    },
    "first_seen": "2026-10-20T14:43:28+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Jonathan Leibovitz, clarinet"
   },
   "01a15988-a913-7d47-ab7c-6fdc2775ebed": {
@@ -1991,7 +1992,7 @@
     }
    },
    "first_seen": "2026-10-20T14:43:28+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "The Hands Free & Dance Heginbotham: The Party Scene"
   },
   "01a15996-bf73-778b-86df-60e96cf806ed": {
@@ -2014,7 +2015,7 @@
     }
    },
    "first_seen": "2026-10-20T14:43:28+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "William Suh, cello"
   },
   "01a1599c-2906-79b6-bb80-5cd83c726b89": {
@@ -2025,7 +2026,7 @@
     }
    },
    "first_seen": "2026-10-20T14:43:28+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Zachary Wilder & Rob Mounsey"
   },
   "01a159ee-e316-7f04-b34a-6ff19f86b080": {
@@ -2059,7 +2060,7 @@
     }
    },
    "first_seen": "2026-10-21T14:37:51+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "ROYAL THEATRICAL MALE REVUE "
   },
   "01a15ec3-56fa-7278-8385-49c060c897da": {
@@ -2070,7 +2071,7 @@
     }
    },
    "first_seen": "2026-10-21T14:37:51+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "World Premiere of Dead City III, Presented by the Grünbaum Fischer Foundation"
   },
   "01a15ec5-10f8-71de-ac68-caa823f9ed43": {
@@ -2092,7 +2093,7 @@
     }
    },
    "first_seen": "2026-10-21T14:37:51+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Stories Survive: Vladka Meed"
   },
   "01a15ed5-c2c9-7981-a9ce-837a15d8304b": {
@@ -2109,29 +2110,29 @@
     }
    },
    "first_seen": "2026-10-21T14:37:51+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Shudder: A Chilling New Musical Comedy"
   },
   "01a15f00-1b77-7555-862e-ed2671f2df46": {
    "dates": {
     "2026-10-31 14:30": {
-     "avail": 1,
+     "avail": 0,
      "first_seen": "2026-10-26T17:23:44+00:00"
     }
    },
    "first_seen": "2026-10-21T18:52:48+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "SOON"
   },
   "01a15f41-51fc-7d3e-bd41-96bcc9af2d2d": {
    "dates": {
-    "2026-10-27 19:00": {
-     "avail": 0,
-     "first_seen": "2026-10-25T22:49:10+00:00"
+    "2026-10-28 19:00": {
+     "avail": 15,
+     "first_seen": "2026-10-27T20:39:15+00:00"
     }
    },
    "first_seen": "2026-10-21T18:52:48+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "The Visitors"
   },
   "01a15f97-e79c-7cd4-9e4f-5817ddee5d35": {
@@ -2154,7 +2155,7 @@
     }
    },
    "first_seen": "2026-10-21T18:52:48+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Elysian Fields"
   },
   "01a1639a-d979-7b23-8807-266511c4202a": {
@@ -2183,7 +2184,7 @@
     }
    },
    "first_seen": "2026-10-22T19:11:49+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Elena Shaddow Sings Nine… all of it!"
   },
   "01a164a7-bca5-7cc7-b849-064f75e5dd9d": {
@@ -2194,7 +2195,7 @@
     }
    },
    "first_seen": "2026-10-22T19:11:49+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "2026 New York Jewish Book Festival"
   },
   "01a164b0-5837-7d84-b69a-766f2e5c468d": {
@@ -2205,7 +2206,7 @@
     }
    },
    "first_seen": "2026-10-22T19:11:49+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Plenty of Courage"
   },
   "01a164da-bb34-7532-9556-e898d0da10eb": {
@@ -2222,7 +2223,7 @@
     }
    },
    "first_seen": "2026-10-22T19:11:49+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Orchestra of St. Luke's Chamber Ensemble Beethoven’s “Kreutzer” Sonata with Rita Dove at Weill Recital Hall at Carnegie Hall"
   },
   "01a16530-2074-7303-aa75-32b1292d73c2": {
@@ -2250,7 +2251,7 @@
      "first_seen": "2026-10-26T17:23:44+00:00"
     },
     "2026-10-29 19:00": {
-     "avail": 4,
+     "avail": 2,
      "first_seen": "2026-10-26T17:23:44+00:00"
     },
     "2026-10-30 19:00": {
@@ -2267,22 +2268,18 @@
     }
    },
    "first_seen": "2026-10-23T19:04:05+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "The First Warning & The Proposal"
   },
   "01a16af7-dd4a-7424-8f57-8b733b0a5964": {
    "dates": {
-    "2026-10-27 19:30": {
-     "avail": 0,
-     "first_seen": "2026-10-25T18:10:53+00:00"
-    },
     "2026-10-28 19:30": {
-     "avail": 9,
+     "avail": 6,
      "first_seen": "2026-10-26T17:23:44+00:00"
     }
    },
    "first_seen": "2026-10-24T00:18:18+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "the ripple, the wave that carried me home"
   },
   "01a16bbc-83fa-7f24-ab19-35c98c5f3ddc": {
@@ -2303,7 +2300,7 @@
     }
    },
    "first_seen": "2026-10-24T16:36:15+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Solo: A Show About Friendship SPECIAL TAPING"
   },
   "01a16e8e-6132-7bf6-a1b8-0776a29a269c": {
@@ -2331,12 +2328,12 @@
   "01a16e94-b503-77a0-86e8-2767daba3350": {
    "dates": {
     "2026-11-13 19:00": {
-     "avail": 7,
+     "avail": 4,
      "first_seen": "2026-10-24T16:36:15+00:00"
     }
    },
    "first_seen": "2026-10-24T16:36:15+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Ian Hobson - Musical Moments, Infinite Song - the Piano Music of Franz Schubert and Sergei Rachmaninoff"
   },
   "01a16e97-2b88-750e-97a7-57d575d88745": {
@@ -2347,7 +2344,7 @@
     }
    },
    "first_seen": "2026-10-24T16:36:15+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Children of Orpheus"
   },
   "01a17342-a09e-7d60-a770-a25f1953f246": {
@@ -2363,32 +2360,24 @@
   },
   "01a1788d-4eee-74ab-9880-0e548fb3d5d5": {
    "dates": {
-    "2026-10-27 19:30": {
-     "avail": 0,
-     "first_seen": "2026-10-26T17:23:44+00:00"
-    },
     "2026-10-29 19:30": {
      "avail": 2,
      "first_seen": "2026-10-26T17:23:44+00:00"
     }
    },
    "first_seen": "2026-10-26T17:23:44+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "The Morbs"
   },
   "01a1789c-614b-7e75-ab26-e156bca7b488": {
    "dates": {
-    "2026-10-27 19:00": {
-     "avail": 20,
-     "first_seen": "2026-10-26T17:23:44+00:00"
-    },
     "2026-10-28 14:30": {
      "avail": 20,
      "first_seen": "2026-10-26T17:23:44+00:00"
     }
    },
    "first_seen": "2026-10-26T17:23:44+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Skin to Skin"
   },
   "01a178b5-c089-79d2-8898-3923b757bfdf": {
@@ -2399,7 +2388,7 @@
     }
    },
    "first_seen": "2026-10-26T17:23:44+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Speaker Series: Annaleigh Ashford"
   },
   "01a178c8-a1b3-73f0-98ec-d4de41c7b02e": {
@@ -2414,7 +2403,7 @@
     }
    },
    "first_seen": "2026-10-26T17:23:44+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Mama/Run"
   },
   "01a178cd-6edb-7048-bdc0-14dc7f9e3ed4": {
@@ -2433,7 +2422,7 @@
     }
    },
    "first_seen": "2026-10-26T17:23:44+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Specimen"
   },
   "01a178ce-f2cd-7c76-950e-f6f68250be0b": {
@@ -2448,19 +2437,19 @@
     }
    },
    "first_seen": "2026-10-26T17:23:44+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Furball"
   },
   "01a178f3-f536-7f62-8b6a-6fa518948e5c": {
    "dates": {
     "2026-10-30 20:00": {
      "alerted_at": "2026-10-27T00:48:29+00:00",
-     "avail": 65,
+     "avail": 57,
      "first_seen": "2026-10-26T17:23:44+00:00"
     }
    },
    "first_seen": "2026-10-26T17:23:44+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "The Rocky Horror Picture Show: Original Cast Spooktacular Tour"
   },
   "01a17d88-5806-77da-b665-83fad7b71b9a": {
@@ -2471,7 +2460,7 @@
     }
    },
    "first_seen": "2026-10-27T16:09:34+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "True Confessions of a Go Go Girl"
   },
   "01a17d89-c520-7a5e-a4d2-3a18e4484ae8": {
@@ -2482,7 +2471,7 @@
     }
    },
    "first_seen": "2026-10-27T16:09:34+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Tara Jackson: Allow Me to Introduce Myself"
   },
   "01a17da2-f3ff-75f5-b82e-ae60f5fee84b": {
@@ -2504,7 +2493,7 @@
     }
    },
    "first_seen": "2026-10-27T16:09:34+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Becoming Vegan – Circle Theater Festival"
   },
   "01a17db2-fb02-748e-a03d-1ab7b775cf5e": {
@@ -2515,7 +2504,7 @@
     }
    },
    "first_seen": "2026-10-27T16:09:34+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Tom Van Horn (Comedy Central), Connor O’Brien (Don’t Tell Comedy), Jocelyn Chia (Howard Stern), Paul Mecurio (The Daily Show), & Brian Scott McFadden (Ice Age: The Meltdown)!"
   },
   "01a17dd3-50cf-726e-8fc0-1965f63a3be4": {
@@ -2526,7 +2515,7 @@
     }
    },
    "first_seen": "2026-10-27T16:09:34+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Christian Finnegan (Chapelle’s Show), Nick Griffin (Letterman), Connor O’Brien (Don’t Tell Comedy), Olga Namer (Ladies of Laughter), & Gregg Rogell (The Tonight Show)!"
   },
   "01a17dd5-03b8-7e7a-be9c-493aa74d4a7a": {
@@ -2537,34 +2526,61 @@
     }
    },
    "first_seen": "2026-10-27T16:09:34+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Sam Dillon Quintet"
   },
   "01a17de8-356e-757a-80e0-0acfd9ec3651": {
    "dates": {
     "2026-10-28 19:30": {
-     "avail": 92,
+     "avail": 82,
      "first_seen": "2026-10-27T16:09:34+00:00"
     },
     "2026-10-29 19:30": {
-     "avail": 80,
+     "avail": 66,
      "first_seen": "2026-10-27T16:09:34+00:00"
+    },
+    "2026-10-31 19:30": {
+     "avail": 94,
+     "first_seen": "2026-10-27T20:39:15+00:00"
     }
    },
    "first_seen": "2026-10-27T16:09:34+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "NEW YORK PHILHARMONIC - Get Out in Concert"
   },
   "01a17e22-0b9f-75c5-ba12-293cf9d0c2aa": {
    "dates": {
     "2026-10-30 17:30": {
-     "avail": 37,
+     "avail": 0,
      "first_seen": "2026-10-27T16:12:42+00:00"
+    },
+    "2026-10-30 20:30": {
+     "avail": 22,
+     "first_seen": "2026-10-27T20:39:15+00:00"
+    },
+    "2026-11-01 15:00": {
+     "avail": 33,
+     "first_seen": "2026-10-27T20:39:15+00:00"
     }
    },
    "first_seen": "2026-10-27T16:12:42+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Pre-Existing Condition"
+  },
+  "01a17e42-e25f-7ef7-a903-908b093179f2": {
+   "dates": {
+    "2026-10-27 19:30": {
+     "avail": 0,
+     "first_seen": "2026-10-27T20:39:15+00:00"
+    },
+    "2026-10-28 19:30": {
+     "avail": 0,
+     "first_seen": "2026-10-27T20:39:15+00:00"
+    }
+   },
+   "first_seen": "2026-10-27T20:39:15+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
+   "name": "We'll See"
   },
   "48015": {
    "dates": {},
@@ -2593,7 +2609,7 @@
     }
    },
    "first_seen": "2026-09-28T18:46:46+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Katsura Sunshine's Rakugo"
   },
   "50857": {
@@ -2604,7 +2620,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Early Bird Comedy at St Marks Comedy Club"
   },
   "51194": {
@@ -2698,9 +2714,9 @@
     }
    },
    "first_seen": "2026-10-03T14:53:01+00:00",
-   "last_seen": "2026-10-27T16:19:17+00:00",
+   "last_seen": "2026-10-27T20:48:49+00:00",
    "name": "Pasquale Grasso Trio"
   }
  },
- "updated_at": "2026-10-27T16:19:17+00:00"
+ "updated_at": "2026-10-27T20:48:49+00:00"
 }
