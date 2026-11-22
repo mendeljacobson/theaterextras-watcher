@@ -89,7 +89,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "DCINY: Total Vocal with Deke Sharon, A Holiday Celebration at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "019ff6e0-b422-7be4-b1ee-ef18c2d59562": {
@@ -324,7 +324,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "New York Jets vs Denver Broncos"
   },
   "01a062b4-920c-75dd-8225-b22e58f2f0be": {
@@ -336,7 +336,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "DCINY: Sounds of the Season at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "01a06833-9e2f-7ab9-8bd1-e9cff671d13c": {
@@ -353,7 +353,7 @@
     }
    },
    "first_seen": "2026-09-03T18:05:28+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Quinn Lemley's \"Swinging Hot Tomato\""
   },
   "01a0683c-6ae2-7148-b626-bbb838737791": {
@@ -1029,7 +1029,7 @@
     }
    },
    "first_seen": "2026-10-03T14:53:01+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "DCINY: Jubilaeum Holiday Gala at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "01a1020b-e0d3-77ca-aa41-3c80965f8c75": {
@@ -1119,12 +1119,12 @@
   "01a10245-b710-71ec-bd7d-6a8dbc87fdf7": {
    "dates": {
     "2026-11-23 20:00": {
-     "avail": 54,
+     "avail": 52,
      "first_seen": "2026-10-03T14:58:40+00:00"
     }
    },
    "first_seen": "2026-10-03T14:58:40+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Christmas in the Big Apple at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "01a102de-e133-763f-9331-be2df7b6ce9c": {
@@ -1136,7 +1136,7 @@
     }
    },
    "first_seen": "2026-10-03T18:20:26+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "16th Annual Christmas in New York at Stern Audiorium/Perelman Stage at Carnegie Hall"
   },
   "01a102e6-32fd-7cb3-8a83-d7d1bfdb97f7": {
@@ -1187,7 +1187,7 @@
     }
    },
    "first_seen": "2026-10-03T18:20:26+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Anderson Brothers play Benny Goodman"
   },
   "01a102fc-2b06-70f0-a613-67d7d5d6cd53": {
@@ -1805,7 +1805,7 @@
     }
    },
    "first_seen": "2026-10-20T14:43:28+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "William Suh, cello"
   },
   "01a1599c-2906-79b6-bb80-5cd83c726b89": {
@@ -1817,7 +1817,7 @@
     }
    },
    "first_seen": "2026-10-20T14:43:28+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Zachary Wilder & Rob Mounsey"
   },
   "01a159ee-e316-7f04-b34a-6ff19f86b080": {
@@ -1840,21 +1840,17 @@
   },
   "01a15ebd-2104-7759-8af4-4e2d42d15fd8": {
    "dates": {
-    "2026-11-22 21:00": {
-     "avail": 17,
-     "first_seen": "2026-11-03T15:32:15+00:00"
-    },
     "2026-11-29 21:00": {
      "avail": 13,
      "first_seen": "2026-11-16T17:28:37+00:00"
     },
     "2026-12-06 21:00": {
-     "avail": 20,
+     "avail": 18,
      "first_seen": "2026-11-16T17:28:37+00:00"
     }
    },
    "first_seen": "2026-10-21T14:37:51+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "ROYAL THEATRICAL MALE REVUE "
   },
   "01a15ec3-56fa-7278-8385-49c060c897da": {
@@ -2254,7 +2250,7 @@
     }
    },
    "first_seen": "2026-10-28T16:33:22+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Joie Bianco Trio"
   },
   "01a18362-3a5a-740c-b67f-db7f647e0714": {
@@ -2545,7 +2541,7 @@
     }
    },
    "first_seen": "2026-11-05T16:42:12+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Jack Frost Saves Christmas"
   },
   "01a1b0da-08c1-7d87-b33f-c243dbc966f8": {
@@ -2673,7 +2669,7 @@
     }
    },
    "first_seen": "2026-11-09T19:09:34+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "DRMAGDN + INViDA - A VERY EDM XMAS RAVE "
   },
   "01a1c13f-461a-7e42-84f9-a9215aba529b": {
@@ -2696,7 +2692,7 @@
     }
    },
    "first_seen": "2026-11-09T19:09:34+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Jillian Laurain"
   },
   "01a1c252-4616-70d9-b39e-ed9829e71948": {
@@ -2819,7 +2815,7 @@
     }
    },
    "first_seen": "2026-11-16T17:28:37+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Ryan Fogler: The Journey Through the American Songbook"
   },
   "01a1e52a-690e-731f-8f46-45f3924fdd83": {
@@ -2838,7 +2834,7 @@
     }
    },
    "first_seen": "2026-11-16T17:28:37+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Ill Winds"
   },
   "01a1e52c-ece6-74fd-b9e8-ba3e216a63a9": {
@@ -2849,7 +2845,7 @@
     }
    },
    "first_seen": "2026-11-16T17:28:37+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "A Night of Cool"
   },
   "01a1e52e-e9a2-7bcd-85d5-d3ba2d31e91c": {
@@ -2884,7 +2880,7 @@
     }
    },
    "first_seen": "2026-11-18T00:01:17+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": " The Nutcracker & A Visit to Toyland"
   },
   "01a1eabe-8148-7168-8055-82b7b12eae47": {
@@ -2945,7 +2941,7 @@
   "01a1f0db-3b26-7ad1-a5fe-ef39c34cf4ea": {
    "dates": {
     "2026-11-24 19:30": {
-     "avail": 19,
+     "avail": 11,
      "first_seen": "2026-11-21T19:36:23+00:00"
     },
     "2026-11-25 19:30": {
@@ -2954,7 +2950,7 @@
     }
    },
    "first_seen": "2026-11-18T22:51:23+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "La Distance"
   },
   "01a1f395-481e-7cfb-ab01-c5c72ed1e0f3": {
@@ -2965,7 +2961,7 @@
     }
    },
    "first_seen": "2026-11-19T12:14:36+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Ms. Blakk For President"
   },
   "01a1f5eb-b2d1-7d13-adcc-f86eb090f3ad": {
@@ -2982,7 +2978,7 @@
     }
    },
    "first_seen": "2026-11-20T23:23:35+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Fantasma"
   },
   "01a1fa91-5f0e-7b2a-a43a-5bac664a3bad": {
@@ -2993,7 +2989,7 @@
     }
    },
    "first_seen": "2026-11-20T23:23:35+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "One-on-One with Tovah Feldshuh"
   },
   "01a1fe4b-3901-7cf0-92dc-e32c35dcdbf6": {
@@ -3008,7 +3004,7 @@
     }
    },
    "first_seen": "2026-11-21T19:36:23+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "CreateTheater New Works Cabaret"
   },
   "01a1fe4d-98e0-781c-8287-6f38452f5d99": {
@@ -3019,18 +3015,18 @@
     }
    },
    "first_seen": "2026-11-21T19:36:23+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "A Mark Mackillop Christmas"
   },
   "01a1fe54-3a4a-72d2-a162-62e0967c81f7": {
    "dates": {
     "2026-11-30 19:00": {
-     "avail": 10,
+     "avail": 8,
      "first_seen": "2026-11-21T19:36:23+00:00"
     }
    },
    "first_seen": "2026-11-21T19:36:23+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Steve Earle, Christina Baker Kline, and Jana Prikryl: Muldoon’s Picnic"
   },
   "01a1fe56-9500-7398-b4f0-cd3ec11ed83d": {
@@ -3041,18 +3037,18 @@
     }
    },
    "first_seen": "2026-11-21T19:36:23+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Arthur Sze, Ilya Kaminsky, Daniel Mendelsohn, and Paul Muldoon: Transient Worlds — An Evening of Poetry in Translation"
   },
   "01a1fe5c-a8c2-7576-ae8e-bbe47811c8de": {
    "dates": {
     "2026-12-01 14:00": {
-     "avail": 18,
+     "avail": 15,
      "first_seen": "2026-11-21T19:36:23+00:00"
     }
    },
    "first_seen": "2026-11-21T19:36:23+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "The Art of Mah Jongg: An Afternoon of Gameplay, Strategy — and Shopping!"
   },
   "01a1fe66-9668-780a-8989-fd88508e11aa": {
@@ -3067,7 +3063,7 @@
     }
    },
    "first_seen": "2026-11-21T19:36:23+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "NEW YORK PHILHARMONIC at Lincoln Center"
   },
   "48015": {
@@ -3102,7 +3098,7 @@
     }
    },
    "first_seen": "2026-09-28T18:46:46+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Katsura Sunshine's Rakugo"
   },
   "50857": {
@@ -3113,7 +3109,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Early Bird Comedy at St Marks Comedy Club"
   },
   "51194": {
@@ -3177,17 +3173,13 @@
   },
   "51891": {
    "dates": {
-    "2026-11-22 22:30": {
-     "avail": 12,
-     "first_seen": "2026-11-09T19:09:34+00:00"
-    },
     "2026-11-29 22:30": {
      "avail": 18,
      "first_seen": "2026-11-09T19:09:34+00:00"
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-11-22T18:51:29+00:00",
+   "last_seen": "2026-11-22T23:59:10+00:00",
    "name": "Birdland Latin Jazz Orchestra"
   },
   "51922": {
@@ -3215,5 +3207,5 @@
    "name": "Pasquale Grasso Trio"
   }
  },
- "updated_at": "2026-11-22T18:51:29+00:00"
+ "updated_at": "2026-11-22T23:59:10+00:00"
 }
