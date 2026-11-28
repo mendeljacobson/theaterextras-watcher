@@ -319,7 +319,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "New York Jets vs Denver Broncos"
   },
   "01a062b4-920c-75dd-8225-b22e58f2f0be": {
@@ -331,7 +331,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "DCINY: Sounds of the Season at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "01a06833-9e2f-7ab9-8bd1-e9cff671d13c": {
@@ -348,7 +348,7 @@
     }
    },
    "first_seen": "2026-09-03T18:05:28+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Quinn Lemley's \"Swinging Hot Tomato\""
   },
   "01a0683c-6ae2-7148-b626-bbb838737791": {
@@ -427,7 +427,7 @@
     }
    },
    "first_seen": "2026-09-09T04:51:37+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "The Hope Theory"
   },
   "01a086dd-c2c2-7c41-a68a-14baacf7eec5": {
@@ -862,7 +862,7 @@
     }
    },
    "first_seen": "2026-09-30T20:05:09+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "COPPERFIELD: The New Musical"
   },
   "01a0f32e-ac43-7641-9664-b5a551db9aac": {
@@ -1030,7 +1030,7 @@
     }
    },
    "first_seen": "2026-10-03T14:53:01+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "DCINY: Jubilaeum Holiday Gala at Stern Auditorium/Perelman Stage at Carnegie Hall"
   },
   "01a1020b-e0d3-77ca-aa41-3c80965f8c75": {
@@ -1132,7 +1132,7 @@
     }
    },
    "first_seen": "2026-10-03T18:20:26+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "16th Annual Christmas in New York at Stern Audiorium/Perelman Stage at Carnegie Hall"
   },
   "01a102e6-32fd-7cb3-8a83-d7d1bfdb97f7": {
@@ -1167,7 +1167,7 @@
     }
    },
    "first_seen": "2026-10-03T18:20:26+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Anderson Brothers play Benny Goodman"
   },
   "01a102fc-2b06-70f0-a613-67d7d5d6cd53": {
@@ -1617,16 +1617,16 @@
   "01a140f7-c5a5-7b01-8ee2-202b118f1918": {
    "dates": {
     "2026-12-01 19:00": {
-     "avail": 3,
+     "avail": 0,
      "first_seen": "2026-11-27T23:30:15+00:00"
     },
     "2026-12-02 14:00": {
-     "avail": 14,
+     "avail": 13,
      "first_seen": "2026-11-27T23:30:15+00:00"
     }
    },
    "first_seen": "2026-10-15T19:55:34+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Waiting for Lefty"
   },
   "01a144e2-54ce-77a7-959f-ce687f695ae7": {
@@ -1782,7 +1782,7 @@
     }
    },
    "first_seen": "2026-10-20T14:43:28+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "William Suh, cello"
   },
   "01a1599c-2906-79b6-bb80-5cd83c726b89": {
@@ -1794,7 +1794,7 @@
     }
    },
    "first_seen": "2026-10-20T14:43:28+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Zachary Wilder & Rob Mounsey"
   },
   "01a159ee-e316-7f04-b34a-6ff19f86b080": {
@@ -1827,7 +1827,7 @@
     }
    },
    "first_seen": "2026-10-21T14:37:51+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "ROYAL THEATRICAL MALE REVUE "
   },
   "01a15ec3-56fa-7278-8385-49c060c897da": {
@@ -2048,7 +2048,7 @@
     }
    },
    "first_seen": "2026-10-27T16:09:34+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "True Confessions of a Go Go Girl"
   },
   "01a17d89-c520-7a5e-a4d2-3a18e4484ae8": {
@@ -2100,12 +2100,12 @@
      "first_seen": "2026-11-25T23:20:37+00:00"
     },
     "2026-11-28 19:00": {
-     "avail": 15,
+     "avail": 14,
      "first_seen": "2026-11-25T23:20:37+00:00"
     }
    },
    "first_seen": "2026-10-27T16:12:42+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Pre-Existing Condition"
   },
   "01a17e42-e25f-7ef7-a903-908b093179f2": {
@@ -2119,7 +2119,7 @@
      "first_seen": "2026-11-27T15:18:31+00:00"
     },
     "2026-11-29 13:30": {
-     "avail": 2,
+     "avail": 0,
      "first_seen": "2026-11-27T15:18:31+00:00"
     },
     "2026-11-29 19:30": {
@@ -2128,7 +2128,7 @@
     }
    },
    "first_seen": "2026-10-27T20:39:15+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "We'll See"
   },
   "01a17f1f-3904-769f-9805-d25b621d10da": {
@@ -2223,7 +2223,7 @@
     }
    },
    "first_seen": "2026-10-28T16:33:22+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Joie Bianco Trio"
   },
   "01a18362-3a5a-740c-b67f-db7f647e0714": {
@@ -2498,7 +2498,7 @@
     }
    },
    "first_seen": "2026-11-05T16:42:12+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Jack Frost Saves Christmas"
   },
   "01a1b0da-08c1-7d87-b33f-c243dbc966f8": {
@@ -2557,7 +2557,7 @@
     }
    },
    "first_seen": "2026-11-12T19:10:56+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "2:22 A Ghost Story"
   },
   "01a1c0af-1072-7746-b572-bafe2a657d17": {
@@ -2616,7 +2616,7 @@
     }
    },
    "first_seen": "2026-11-09T19:09:34+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "DRMAGDN + INViDA - A VERY EDM XMAS RAVE "
   },
   "01a1c13f-461a-7e42-84f9-a9215aba529b": {
@@ -2639,7 +2639,7 @@
     }
    },
    "first_seen": "2026-11-09T19:09:34+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Jillian Laurain"
   },
   "01a1c252-4616-70d9-b39e-ed9829e71948": {
@@ -2704,7 +2704,7 @@
     }
    },
    "first_seen": "2026-11-11T23:01:10+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Do Not Try This At Home"
   },
   "01a1ccd7-b142-738a-8687-dac15e1f3db1": {
@@ -2771,7 +2771,7 @@
     }
    },
    "first_seen": "2026-11-16T17:28:37+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Ill Winds"
   },
   "01a1e52c-ece6-74fd-b9e8-ba3e216a63a9": {
@@ -2782,7 +2782,7 @@
     }
    },
    "first_seen": "2026-11-16T17:28:37+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "A Night of Cool"
   },
   "01a1e52e-e9a2-7bcd-85d5-d3ba2d31e91c": {
@@ -2817,7 +2817,7 @@
     }
    },
    "first_seen": "2026-11-18T00:01:17+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": " The Nutcracker & A Visit to Toyland"
   },
   "01a1eabe-8148-7168-8055-82b7b12eae47": {
@@ -2846,7 +2846,7 @@
     }
    },
    "first_seen": "2026-11-20T23:23:35+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "The King's Critique"
   },
   "01a1ef22-9380-79f7-83a8-8c933779627e": {
@@ -2899,20 +2899,20 @@
   "01a1f5eb-b2d1-7d13-adcc-f86eb090f3ad": {
    "dates": {
     "2026-11-28 17:00": {
-     "avail": 11,
+     "avail": 10,
      "first_seen": "2026-11-24T21:29:27+00:00"
     },
     "2026-11-28 20:00": {
-     "avail": 13,
+     "avail": 11,
      "first_seen": "2026-11-24T21:29:27+00:00"
     },
     "2026-11-29 17:00": {
-     "avail": 10,
+     "avail": 8,
      "first_seen": "2026-11-24T21:29:27+00:00"
     }
    },
    "first_seen": "2026-11-20T01:52:47+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "A Kidman Carol"
   },
   "01a1fa80-a2e7-7a90-bc4e-430deff07fa7": {
@@ -2923,7 +2923,7 @@
     }
    },
    "first_seen": "2026-11-20T23:23:35+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Fantasma"
   },
   "01a1fa91-5f0e-7b2a-a43a-5bac664a3bad": {
@@ -2952,7 +2952,7 @@
     }
    },
    "first_seen": "2026-11-21T19:36:23+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Steve Earle, Christina Baker Kline, and Jana Prikryl: Muldoon’s Picnic"
   },
   "01a1fe56-9500-7398-b4f0-cd3ec11ed83d": {
@@ -2963,7 +2963,7 @@
     }
    },
    "first_seen": "2026-11-21T19:36:23+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Arthur Sze, Ilya Kaminsky, Daniel Mendelsohn, and Paul Muldoon: Transient Worlds — An Evening of Poetry in Translation"
   },
   "01a1fe5c-a8c2-7576-ae8e-bbe47811c8de": {
@@ -2974,7 +2974,7 @@
     }
    },
    "first_seen": "2026-11-21T19:36:23+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "The Art of Mah Jongg: An Afternoon of Gameplay, Strategy — and Shopping!"
   },
   "01a1fe66-9668-780a-8989-fd88508e11aa": {
@@ -2992,16 +2992,17 @@
   "01a20a2f-f0f5-75d8-870c-6d0cae628636": {
    "dates": {
     "2026-11-28 13:00": {
-     "avail": 32,
+     "avail": 6,
      "first_seen": "2026-11-27T23:30:15+00:00"
     },
     "2026-11-28 19:00": {
-     "avail": 0,
+     "alerted_at": "2026-11-28T13:42:38+00:00",
+     "avail": 7,
      "first_seen": "2026-11-27T23:30:15+00:00"
     }
    },
    "first_seen": "2026-11-24T01:44:23+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "It's a Wonderful Life: A Live Radio Play on BROADWAY"
   },
   "01a20a66-a7b2-7193-b7ad-f0559d49fb41": {
@@ -3012,29 +3013,29 @@
     }
    },
    "first_seen": "2026-11-24T01:44:23+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": " LPR Presents: Ana Gasteyer Sugar & Booze Holiday Spectacular"
   },
   "01a20ed5-869d-740c-8e23-03511c6a9426": {
    "dates": {
     "2026-12-09 18:00": {
-     "avail": 164,
+     "avail": 162,
      "first_seen": "2026-11-24T21:29:27+00:00"
     }
    },
    "first_seen": "2026-11-24T21:29:27+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Global Social Impact Awards at Stern Auditorium at Carnegie Hall"
   },
   "01a2137d-0ef8-753d-a722-08c70410139e": {
    "dates": {
     "2026-12-05 20:00": {
-     "avail": 67,
+     "avail": 63,
      "first_seen": "2026-11-25T23:20:37+00:00"
     }
    },
    "first_seen": "2026-11-25T23:20:37+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "LOVE ACTUALLY - Live in Concert"
   },
   "01a213a4-5f96-7e60-9fa5-31ba6a1f9581": {
@@ -3045,7 +3046,7 @@
     }
    },
    "first_seen": "2026-11-25T23:20:37+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Hoffman Reading Series - Jimi Darkness - Alcoholic Superhero"
   },
   "01a213a6-5a44-7a95-86ba-9be1bf98e203": {
@@ -3056,7 +3057,7 @@
     }
    },
    "first_seen": "2026-11-25T23:20:37+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "La Viole d'Or"
   },
   "01a213b0-e4b1-7df4-8200-d83213af302b": {
@@ -3067,7 +3068,7 @@
     }
    },
    "first_seen": "2026-11-25T23:20:37+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Hoffman Reading Series - Step 9- A Christmas Carol"
   },
   "01a213b2-37d3-7299-8f23-a2f63a763dd8": {
@@ -3084,12 +3085,12 @@
   "01a213b4-2424-736b-8171-32cb25e95789": {
    "dates": {
     "2026-11-30 19:30": {
-     "avail": 2,
+     "avail": 0,
      "first_seen": "2026-11-25T23:20:37+00:00"
     }
    },
    "first_seen": "2026-11-25T23:20:37+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Little Black Book "
   },
   "48015": {
@@ -3119,7 +3120,7 @@
     }
    },
    "first_seen": "2026-09-28T18:46:46+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Katsura Sunshine's Rakugo"
   },
   "50857": {
@@ -3130,7 +3131,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Early Bird Comedy at St Marks Comedy Club"
   },
   "51194": {
@@ -3200,7 +3201,7 @@
     }
    },
    "first_seen": "2026-09-02T16:58:25+00:00",
-   "last_seen": "2026-11-28T05:02:06+00:00",
+   "last_seen": "2026-11-28T13:52:13+00:00",
    "name": "Birdland Latin Jazz Orchestra"
   },
   "51922": {
@@ -3228,5 +3229,5 @@
    "name": "Pasquale Grasso Trio"
   }
  },
- "updated_at": "2026-11-28T05:02:06+00:00"
+ "updated_at": "2026-11-28T13:52:13+00:00"
 }
